@@ -73,7 +73,7 @@
 //       label: "Student Trips",
 //       title: "School Picnic Destinations",
 //       links: [
-//         ["school-picnic-spots-near-pune-for-students", "Pune"],
+//         ["School-Picnic-Spots-Near-Pune-for-Students", "Pune"],
 //         ["school-picnic-spots-near-pimpri-chinchwad", "Pimpri Chinchwad"],
 //         ["school-picnic-spots-near-chakan", "Chakan"],
 //         ["school-picnic-spots-near-talegaon-dabhade", "Talegaon Dabhade"],
@@ -379,7 +379,7 @@ const OmServiceLocations = () => {
       label: "Student Trips",
       title: "School Picnic Destinations",
       links: [
-        ["school-picnic-spots-near-pune-for-students", "Pune"],
+        ["School-Picnic-Spots-Near-Pune-for-Students", "Pune"],
         ["school-picnic-spots-near-pimpri-chinchwad", "Pimpri Chinchwad"],
         ["school-picnic-spots-near-chakan", "Chakan"],
         ["school-picnic-spots-near-talegaon-dabhade", "Talegaon Dabhade"],

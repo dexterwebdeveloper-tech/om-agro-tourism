@@ -328,7 +328,7 @@ const testimonials = [
         { place: "/images/keyword/7.jpg", text: "Destination Wedding Near Pune", link: "destination-wedding-near-pune" },
         { place: "/images/keyword/8.jpg", text: "Hurda Party Places Near Pune", link: "hurda-party-places-near-pune" },
         { place: "/images/keyword/9.jpg", text: "Water Park Near Pune", link: "water-park-near-pune" },
-        { place: "/images/keyword/10.jpg", text: "School Picnic Spots Near Pune for Students", link: "school-picnic-spots-near-pune-for-students" },
+        { place: "/images/keyword/10.jpg", text: "School Picnic Spots Near Pune for Students", link: "School-Picnic-Spots-Near-Pune-for-Students" },
         { place: "/images/keyword/11.jpg", text: "One Day Adventure Resorts Near Pune", link: "one-day-adventure-resorts-near-pune" },
         { place: "/images/keyword/12.jpg", text: "Resort Near Pune", link: "resort-near-pune" },
         { place: "/images/keyword/13.jpg", text: "Forest Resorts Near Pune", link: "forest-resorts-near-pune" },
@@ -356,7 +356,7 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "School Picnic Spots Near Pune for Students",
-  "image": "https://www.omagrotourism.com/assets/images/school-picnic-spots-near-pune-for-students.webp",
+  "image": "https://www.omagrotourism.com/assets/images/School-Picnic-Spots-Near-Pune-for-Students.webp",
   "description": "Om Agro Tourism offers an engaging and nature-oriented destination for schools searching for School Picnic Spots Near Pune for Students. A school picnic can give students an opportunity to step outside the classroom, experience rural surroundings and enjoy meaningful group activities in a refreshing environment. Visitors searching for a picnic spot near Pune can consider Om Agro Tourism for educational outings, recreational visits and one-day school trips surrounded by open spaces and countryside scenery. A One day trip near Pune can be planned for students who need a convenient destination where learning, recreation and group interaction can come together. Schools looking for a one day picnic spot near Pune can organize an enjoyable outing that allows students to spend time with classmates and teachers away from their regular academic environment. For families and educational groups considering a 2 day trip near Pune with family, the surrounding countryside can also provide an opportunity to combine leisure with nature-based experiences. A 1 day Picnic Spot Near Pune can be particularly suitable for school groups because it allows students to enjoy a complete outdoor experience without requiring extensive travel arrangements. Schools comparing school picnic spots in Pune and picnic spots for school students can consider an agro-tourism setting where children can observe rural surroundings, enjoy outdoor recreation and develop a closer connection with nature. Picnic spots for school students near me and picnic spot for school students in Pune are popular searches among schools planning convenient educational outings, and Om Agro Tourism provides a peaceful environment for group visits. Schools from Pimpri-Chinchwad searching for a picnic spot for school students in Pimpri Chinchwad can also explore a countryside destination away from crowded urban areas. Educational institutions looking for school picnic spots in Pimpri Chinchwad or school picnic spots in Kharadi can consider nearby nature-focused destinations for planned student outings. The setting can accommodate school groups, teachers and students looking for recreation, interaction and memorable outdoor experiences. Om Agro Tourism provides a refreshing combination of agriculture, nature, open spaces and group-friendly activities, making it suitable for school picnics, educational visits, student outings and one-day trips near Pune.",
   "brand": {
     "@type": "Brand",
@@ -367,7 +367,7 @@ const productSchema = {
     "priceCurrency": "INR",
     "price": "Contact for Picnic Package Pricing",
     "availability": "https://schema.org/InStock",
-    "url": "https://www.omagrotourism.com/school-picnic-spots-near-pune-for-students"
+    "url": "https://www.omagrotourism.com/School-Picnic-Spots-Near-Pune-for-Students"
   }
 };
 

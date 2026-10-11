@@ -221,7 +221,7 @@ function App() {
 <Route path="/destination-wedding-near-pune" element={<DestinationWeddingNearPune />} />
 <Route path="/hurda-party-places-near-pune" element={<HurdaPartyPlacesNearPune />} />
 <Route path="/water-park-near-pune" element={<WaterParkNearPune />} />
-<Route path="/school-picnic-spots-near-pune-for-students" element={<Schoolpicnicspotsnearpuneforstudents />} />
+<Route path="/School-Picnic-Spots-Near-Pune-for-Students" element={<Schoolpicnicspotsnearpuneforstudents />} />
 <Route path="/one-day-adventure-resorts-near-pune" element={<OnedayAdventureResortsNearPune />} />
 <Route path="/resort-near-pune" element={<ResortNearPune />} />
 <Route path="/forest-resorts-near-pune" element={<ForestResortsNearPune />} />

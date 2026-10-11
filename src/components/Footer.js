@@ -1,5 +1,5 @@
 // import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // const Footer = () => {
 //   return (
 //     <footer className="footer footer-four pt-4 m-0 p-0">
@@ -90,7 +90,7 @@
 // <li><Link to="/destination-wedding-near-pune"><i className="fa-solid fa-tree darkcolor"></i> Destination Wedding Near Pune</Link></li>
 // <li><Link to="/hurda-party-places-near-pune"><i className="fa-solid fa-tree darkcolor"></i> Hurda Party Places Near Pune</Link></li>
 // <li><Link to="/water-park-near-pune"><i className="fa-solid fa-tree darkcolor"></i> Water Park Near Pune</Link></li>
-// <li><Link to="/school-picnic-spots-near-pune-for-students"><i className="fa-solid fa-tree darkcolor"></i> School Picnic Spots Near Pune for Students</Link></li>
+// <li><Link to="/School-Picnic-Spots-Near-Pune-for-Students"><i className="fa-solid fa-tree darkcolor"></i> School Picnic Spots Near Pune for Students</Link></li>
 // <li><Link to="/one-day-adventure-resorts-near-pune"><i className="fa-solid fa-tree darkcolor"></i> One Day Adventure Resorts Near Pune</Link></li>
 // <li><Link to="/resort-near-pune"><i className="fa-solid fa-tree darkcolor"></i> Resort Near Pune</Link></li>
 // <li><Link to="/forest-resorts-near-pune"><i className="fa-solid fa-tree darkcolor"></i> Forest Resorts Near Pune</Link></li>
@@ -435,6 +435,36 @@ const Footer = () => {
                       Contact Us
                     </a>
                   </li>
+
+                  <li><Link to="/one-day-picnic-spot-near-pune-for-family" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> One Day Picnic Spot Near Pune for Family</Link></li>
+<li><Link to="/One-Day-Trip-Near-Pune" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> One Day Trip Near Pune</Link></li>
+<li><Link to="/Picnic-Spot-Near-Pune" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> Picnic Spot Near Pune</Link></li>
+<li><Link to="/Picnic-Destination-Near-Pune" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> Picnic Destination Near Pune</Link></li>
+<li><Link to="/Corporate-Outing-Resorts-Near-Pune" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> Corporate Outing Resorts Near Pune</Link></li>
+<li><Link to="/Agri-Tourism-Near-Pune" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> Agri Tourism Near Pune</Link></li>
+<li><Link to="/Destination-Wedding-Near-Pune" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> Destination Wedding Near Pune</Link></li>
+<li><Link to="/Hurda-Party-Places-Near-Pune" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> Hurda Party Places Near Pune</Link></li>
+<li><Link to="/Water-Park-Near-Pune" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> Water Park Near Pune</Link></li>
+<li><Link to="/Resort-Near-Mumbai" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> Resort Near Mumbai</Link></li>
+
+<li><Link to="/School-Picnic-Spots-Near-Pune-for-Students" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> School Picnic Spots Near Pune for Students</Link></li>
+<li><Link to="/One-Day-Adventure-Resorts-Near-Pune" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> One Day Adventure Resorts Near Pune</Link></li>
+<li><Link to="/Resort-Near-Pune" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> Resort Near Pune</Link></li>
+<li><Link to="/Forest-Resorts-Near-Pune" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> Forest Resorts Near Pune</Link></li>
+<li><Link to="/Nature-resorts-near-pune-for-weekend" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> Nature Resorts Near Pune for Weekend</Link></li>
+<li><Link to="/Mango-Mahotsav-in-Pune" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> Mango Mahotsav in Pune</Link></li>
+<li><Link to="/Krushi-Paryatan-Kendra-near-Pune" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> Krushi Paryatan Kendra Near Pune</Link></li>
+<li><Link to="/Camping-Places-Near-Pune" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> Camping Places Near Pune</Link></li>
+<li><Link to="/Activities-Resort-Near-Pune" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> Activities Resort Near Pune</Link></li>
+
+<li><Link to="/Agri-Tourism-Near-Mumbai-for-Family" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> Agri Tourism Near Mumbai for Family</Link></li>
+<li><Link to="/One-Day-Picnic-Spot-From-Mumbai" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> One Day Picnic Spot From Mumbai</Link></li>
+<li><Link to="/One-Day-Picnic-Packages-Near-Mumbai" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> One Day Picnic Packages Near Mumbai</Link></li>
+<li><Link to="/School-Picnic-Spots-in-Mumbai" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> School Picnic Spots in Mumbai</Link></li>
+<li><Link to="/Team-Outing-Places-Near-Mumbai" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> Team Outing Places Near Mumbai</Link></li>
+<li><Link to="/Corporate-Outing-Near-Mumbai" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> Corporate Outing Near Mumbai</Link></li>
+<li><Link to="/Picnic-Spot-Near-Nashik" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> Picnic Spot Near Nashik</Link></li>
+<li><Link to="/Farm-House-On-Rent-in-Pune" className="d-none"><i className="fa-solid fa-tree darkcolor"></i> Farm House On Rent in Pune</Link></li>
                 </ul>
 
               </div>
@@ -449,7 +479,7 @@ const Footer = () => {
 
                 <ul>
                   <li>
-                    <a href="/school-picnic-spots-near-pune-for-students">
+                    <a href="/School-Picnic-Spots-Near-Pune-for-Students">
                       <i className="fas fa-angle-right"></i>
                       School Picnic
                     </a>
