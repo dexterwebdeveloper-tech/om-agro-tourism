@@ -1,0 +1,1604 @@
+/* 
+
+.omSeoArea {
+  position: relative;
+  padding: 60px 0 55px;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 0% 0%,
+      rgba(56, 189, 217, 0.12),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 100% 100%,
+      rgba(67, 134, 64, 0.08),
+      transparent 22%
+    ),
+    #f8fdff;
+}
+
+
+
+.omSeoHeading {
+  max-width: 930px;
+  margin: 0 auto 38px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  gap: 18px;
+
+  text-align: left;
+}
+
+
+.omSeoHeadingIcon {
+  width: 58px;
+  height: 58px;
+
+  flex: 0 0 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #078db5,
+      #38bdd9
+    );
+
+  border-radius: 16px;
+
+  color: #ffffff;
+
+  font-size: 21px;
+
+  box-shadow:
+    0 10px 25px rgba(7, 141, 181, 0.20);
+}
+
+
+.omSeoHeading > div:last-child > span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #078db5;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+
+.omSeoHeading h2 {
+  margin: 0 0 8px;
+
+  color: #173f2b;
+
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+
+.omSeoHeading h2 strong {
+  color: #078fb7;
+  font-weight: 800;
+}
+
+
+.omSeoHeading p {
+  margin: 0;
+
+  max-width: 760px;
+
+  color: #687c83;
+
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+
+
+
+.omSeoRows {
+  position: relative;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #d9edf2;
+  border-radius: 17px;
+
+  box-shadow:
+    0 18px 50px rgba(7, 95, 125, 0.07);
+}
+
+
+
+.omSeoRow {
+  display: grid;
+
+  grid-template-columns:
+    275px minmax(0, 1fr);
+
+  align-items: stretch;
+
+  min-height: 110px;
+
+  border-bottom: 1px solid #dfedf1;
+}
+
+
+.omSeoRow:last-child {
+  border-bottom: none;
+}
+
+
+
+
+.omSeoRow:nth-child(even) {
+  background: #f8fcfd;
+}
+
+
+
+
+.omSeoRowTitle {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 22px 20px;
+
+  background:
+    linear-gradient(
+      110deg,
+      rgba(7, 143, 183, 0.075),
+      rgba(56, 189, 217, 0.025)
+    );
+
+  border-right: 1px solid #d9eaf0;
+}
+
+
+.omSeoRowIcon {
+  width: 43px;
+  height: 43px;
+
+  flex: 0 0 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+
+  border: 1px solid #d5edf2;
+  border-radius: 11px;
+
+  color: #078db5;
+
+  font-size: 15px;
+
+  box-shadow:
+    0 7px 18px rgba(7, 141, 181, 0.08);
+}
+
+
+.omSeoRowTitle span {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #438640;
+
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+}
+
+
+.omSeoRowTitle h3 {
+  margin: 0;
+
+  color: #173f2b;
+
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+
+
+
+.omSeoRowTitle::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 20%;
+  bottom: 20%;
+
+  width: 3px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #078db5,
+      #4cc8df
+    );
+
+  border-radius: 0 10px 10px 0;
+}
+
+
+.omSeoLinks {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+
+  gap: 3px 8px;
+
+  padding: 20px 24px;
+
+  line-height: 1.9;
+}
+
+
+.omSeoLinks a {
+  position: relative;
+
+  color: #4f676f !important;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  text-decoration: none !important;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.omSeoLinks a:hover {
+  color: #078db5 !important;
+}
+
+
+.omSeoDot {
+  color: #43a7bf;
+
+  font-size: 9px;
+
+  opacity: 0.65;
+}
+
+
+.omSeoRow {
+  transition:
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.omSeoRow:hover {
+  position: relative;
+  z-index: 2;
+
+  background: #f1fbfd;
+
+  box-shadow:
+    inset 3px 0 0 #078db5;
+}
+
+
+.omSeoRow:hover .omSeoRowIcon {
+  background: #078db5;
+
+  border-color: #078db5;
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+
+.omSeoRowIcon {
+  transition: all 0.25s ease;
+}
+
+
+.omSeoContact {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  margin-top: 28px;
+  padding: 22px 25px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      110deg,
+      #075f7d 0%,
+      #078db5 72%,
+      #2aa9ca 100%
+    );
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 15px 35px rgba(7, 95, 125, 0.15);
+}
+
+
+.omSeoContact::after {
+  content: "";
+
+  position: absolute;
+
+  right: -45px;
+  top: -75px;
+
+  width: 160px;
+  height: 160px;
+
+  border: 27px solid rgba(255, 255, 255, 0.045);
+  border-radius: 50%;
+}
+
+
+
+.omSeoContactLeft {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+}
+
+
+.omSeoContactIcon {
+  width: 52px;
+  height: 52px;
+
+  flex: 0 0 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.13);
+
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 13px;
+
+  color: #c6f2f8;
+
+  font-size: 18px;
+}
+
+
+.omSeoContactLeft span {
+  display: block;
+
+  margin-bottom: 2px;
+
+  color: #b9ebf3;
+
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+
+.omSeoContactLeft h3 {
+  margin: 0 0 3px;
+
+  color: #ffffff;
+
+  font-size: 17px;
+  font-weight: 800;
+}
+
+
+.omSeoContactLeft p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.66);
+
+  font-size: 9px;
+}
+
+ 
+
+.omSeoContactButtons {
+  position: relative;
+  z-index: 3;
+
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+}
+
+
+.omSeoCall,
+.omSeoWhatsapp {
+  min-height: 47px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 9px 15px;
+
+  border-radius: 10px;
+
+  text-decoration: none !important;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.omSeoCall {
+  background: #ffffff;
+
+  color: #075f7d !important;
+}
+
+
+.omSeoCall > i {
+  font-size: 14px;
+}
+
+
+.omSeoCall span {
+  display: flex;
+  flex-direction: column;
+
+  color: #075f7d;
+
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+
+.omSeoCall small {
+  color: #6f8991;
+
+  font-size: 6px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+
+.omSeoWhatsapp {
+  background: #438640;
+
+  color: #ffffff !important;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+
+.omSeoWhatsapp i {
+  font-size: 16px;
+}
+
+
+.omSeoCall:hover,
+.omSeoWhatsapp:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 18px rgba(0, 0, 0, 0.10);
+}
+
+
+
+@media (max-width: 991px) {
+
+  .omSeoArea {
+    padding: 50px 0 45px;
+  }
+
+  .omSeoHeading h2 {
+    font-size: 29px;
+  }
+
+  .omSeoRow {
+    grid-template-columns:
+      225px minmax(0, 1fr);
+  }
+
+  .omSeoRowTitle {
+    padding: 18px 15px;
+  }
+
+  .omSeoLinks {
+    padding: 18px;
+  }
+
+  .omSeoContact {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 767px) {
+
+  .omSeoArea {
+    padding: 42px 0 38px;
+  }
+
+
+
+  .omSeoHeading {
+    display: block;
+
+    margin-bottom: 28px;
+
+    text-align: center;
+  }
+
+  .omSeoHeadingIcon {
+    margin: 0 auto 13px;
+  }
+
+  .omSeoHeading h2 {
+    font-size: 25px;
+  }
+
+  .omSeoHeading p {
+    font-size: 11px;
+  }
+
+
+
+  .omSeoRows {
+    border-radius: 13px;
+  }
+
+  .omSeoRow {
+    display: block;
+
+    min-height: auto;
+  }
+
+  .omSeoRowTitle {
+    border-right: none;
+    border-bottom: 1px solid #d9eaf0;
+
+    padding: 14px 15px;
+  }
+
+  .omSeoRowTitle::before {
+    top: 0;
+    bottom: auto;
+
+    width: 100%;
+    height: 2px;
+  }
+
+  .omSeoRowIcon {
+    width: 38px;
+    height: 38px;
+
+    flex-basis: 38px;
+  }
+
+  .omSeoRowTitle h3 {
+    font-size: 13px;
+  }
+
+
+
+
+  .omSeoLinks {
+    padding: 15px;
+
+    gap: 3px 6px;
+
+    line-height: 1.8;
+  }
+
+  .omSeoLinks a {
+    font-size: 9.5px;
+  }
+
+
+
+  .omSeoContact {
+    padding: 18px 15px;
+  }
+
+  .omSeoContactLeft {
+    align-items: flex-start;
+  }
+
+  .omSeoContactLeft h3 {
+    font-size: 14px;
+  }
+
+  .omSeoContactButtons {
+    width: 100%;
+  }
+
+  .omSeoCall,
+  .omSeoWhatsapp {
+    flex: 1;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+
+  .omSeoHeading h2 {
+    font-size: 22px;
+  }
+
+  .omSeoHeadingIcon {
+    width: 50px;
+    height: 50px;
+
+    font-size: 18px;
+  }
+
+  .omSeoLinks {
+    line-height: 1.7;
+  }
+
+  .omSeoContactButtons {
+    flex-direction: column;
+  }
+
+  .omSeoCall,
+  .omSeoWhatsapp {
+    width: 100%;
+  }
+
+  .omSeoContactIcon {
+    width: 44px;
+    height: 44px;
+
+    flex-basis: 44px;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================
+   OM AGRO TOURISM
+   SERVICE + LOCATION BUTTON SECTION
+========================================================== */
+
+.omSeoArea {
+  position: relative;
+  padding: 65px 0 58px;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 0% 0%,
+      rgba(56, 189, 217, 0.13),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 100% 100%,
+      rgba(67, 134, 64, 0.08),
+      transparent 24%
+    ),
+    linear-gradient(180deg, #f7fdff 0%, #f1fbfe 100%);
+}
+
+
+/* ==========================================================
+   HEADING
+========================================================== */
+
+.omSeoHeading {
+  max-width: 950px;
+  margin: 0 auto 38px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  gap: 18px;
+}
+
+
+.omSeoHeadingIcon {
+  width: 58px;
+  height: 58px;
+  flex: 0 0 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    135deg,
+    #078db5,
+    #38bdd9
+  );
+
+  border-radius: 16px;
+
+  color: #ffffff;
+  font-size: 21px;
+
+  box-shadow:
+    0 12px 28px rgba(7, 141, 181, 0.2);
+}
+
+
+.omSeoHeadingContent > span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #078db5;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+
+.omSeoHeading h2 {
+  margin: 0 0 9px;
+
+  color: #173f2b;
+
+  font-size: 34px;
+  font-weight: 800;
+
+  line-height: 1.25;
+}
+
+
+.omSeoHeading h2 strong {
+  color: #078fb7;
+  font-weight: 800;
+}
+
+
+.omSeoHeading p {
+  max-width: 780px;
+
+  margin: 0;
+
+  color: #687c83;
+
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+
+/* ==========================================================
+   MAIN ROW CONTAINER
+========================================================== */
+
+.omSeoRows {
+  position: relative;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #d8edf3;
+  border-radius: 20px;
+
+  box-shadow:
+    0 18px 55px rgba(7, 95, 125, 0.08);
+}
+
+
+/* ==========================================================
+   EACH CATEGORY ROW
+========================================================== */
+
+.omSeoRow {
+  display: grid;
+
+  grid-template-columns:
+    275px minmax(0, 1fr);
+
+  align-items: stretch;
+
+  min-height: 120px;
+
+  border-bottom: 1px solid #dfedf1;
+
+  transition:
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.omSeoRow:last-child {
+  border-bottom: none;
+}
+
+
+.omSeoRow:nth-child(even) {
+  background: #f9fdfe;
+}
+
+
+.omSeoRow:hover {
+  background: #f2fbfd;
+
+  box-shadow:
+    inset 4px 0 0 #078db5;
+}
+
+
+/* ==========================================================
+   LEFT CATEGORY
+========================================================== */
+
+.omSeoRowTitle {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 24px 20px;
+
+  background:
+    linear-gradient(
+      120deg,
+      rgba(7, 143, 183, 0.08),
+      rgba(56, 189, 217, 0.025)
+    );
+
+  border-right: 1px solid #d9eaf0;
+}
+
+
+.omSeoRowTitle::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 20%;
+  bottom: 20%;
+
+  width: 3px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #078db5,
+      #4cc8df
+    );
+
+  border-radius: 0 10px 10px 0;
+}
+
+
+.omSeoRowIcon {
+  width: 46px;
+  height: 46px;
+
+  flex: 0 0 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+
+  border: 1px solid #d5edf2;
+  border-radius: 12px;
+
+  color: #078db5;
+
+  font-size: 16px;
+
+  box-shadow:
+    0 8px 20px rgba(7, 141, 181, 0.09);
+
+  transition: all 0.25s ease;
+}
+
+
+.omSeoRow:hover .omSeoRowIcon {
+  background: #078db5;
+
+  border-color: #078db5;
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+
+.omSeoRowTitleText span {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #438640;
+
+  font-size: 8px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+}
+
+
+.omSeoRowTitleText h3 {
+  margin: 0;
+
+  color: #173f2b;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  line-height: 1.4;
+}
+
+
+/* ==========================================================
+   BUTTON LINK AREA
+========================================================== */
+
+.omSeoLinks {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 21px 24px;
+}
+
+
+/* ==========================================================
+   EACH LOCATION BUTTON
+========================================================== */
+
+.omSeoLinkBtn {
+  position: relative;
+
+  min-height: 35px;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 6px 9px 6px 7px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #d5ebf0;
+  border-radius: 8px;
+
+  color: #395d68 !important;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  text-decoration: none !important;
+
+  box-shadow:
+    0 3px 10px rgba(7, 95, 125, 0.045);
+
+  transition:
+    background 0.22s ease,
+    border-color 0.22s ease,
+    color 0.22s ease,
+    box-shadow 0.22s ease,
+    transform 0.22s ease;
+}
+
+
+/* PIN */
+
+.omSeoLinkPin {
+  width: 22px;
+  height: 22px;
+
+  flex: 0 0 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eaf8fb;
+
+  border-radius: 6px;
+
+  color: #078db5;
+
+  font-size: 8px;
+
+  transition: all 0.22s ease;
+}
+
+
+/* TEXT */
+
+.omSeoLinkText {
+  white-space: nowrap;
+}
+
+
+/* ARROW */
+
+.omSeoLinkArrow {
+  width: 16px;
+  height: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 1px;
+
+  color: #8cb2bc;
+
+  font-size: 6px;
+
+  transition:
+    color 0.22s ease,
+    transform 0.22s ease;
+}
+
+
+/* ==========================================================
+   BUTTON HOVER
+========================================================== */
+
+.omSeoLinkBtn:hover {
+  background:
+    linear-gradient(
+      135deg,
+      #078db5,
+      #079dc5
+    );
+
+  border-color: #078db5;
+
+  color: #ffffff !important;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 7px 16px rgba(7, 141, 181, 0.17);
+}
+
+
+.omSeoLinkBtn:hover .omSeoLinkPin {
+  background: rgba(255, 255, 255, 0.16);
+
+  color: #ffffff;
+}
+
+
+.omSeoLinkBtn:hover .omSeoLinkArrow {
+  color: #ffffff;
+
+  transform: translateX(2px);
+}
+
+
+/* ==========================================================
+   SUBTLE GREEN VARIATION
+========================================================== */
+
+.omSeoRow:nth-child(3n) .omSeoLinkBtn:nth-child(4n) .omSeoLinkPin {
+  background: #edf7eb;
+  color: #438640;
+}
+
+
+.omSeoRow:nth-child(3n) .omSeoLinkBtn:nth-child(4n):hover .omSeoLinkPin {
+  background: rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+}
+
+
+/* ==========================================================
+   BOTTOM CONTACT CTA
+========================================================== */
+
+.omSeoContact {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  margin-top: 28px;
+  padding: 23px 25px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      110deg,
+      #075f7d 0%,
+      #078db5 72%,
+      #2aa9ca 100%
+    );
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 15px 35px rgba(7, 95, 125, 0.15);
+}
+
+
+.omSeoContact::after {
+  content: "";
+
+  position: absolute;
+
+  right: -45px;
+  top: -75px;
+
+  width: 160px;
+  height: 160px;
+
+  border: 27px solid rgba(255, 255, 255, 0.045);
+  border-radius: 50%;
+}
+
+
+/* ==========================================================
+   CTA LEFT
+========================================================== */
+
+.omSeoContactLeft {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+}
+
+
+.omSeoContactIcon {
+  width: 52px;
+  height: 52px;
+
+  flex: 0 0 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.13);
+
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 13px;
+
+  color: #c6f2f8;
+
+  font-size: 18px;
+}
+
+
+.omSeoContactLeft span {
+  display: block;
+
+  margin-bottom: 2px;
+
+  color: #b9ebf3;
+
+  font-size: 8px;
+  font-weight: 800;
+
+  letter-spacing: 1.2px;
+}
+
+
+.omSeoContactLeft h3 {
+  margin: 0 0 3px;
+
+  color: #ffffff;
+
+  font-size: 17px;
+  font-weight: 800;
+}
+
+
+.omSeoContactLeft p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  font-size: 9px;
+}
+
+
+/* ==========================================================
+   CTA BUTTONS
+========================================================== */
+
+.omSeoContactButtons {
+  position: relative;
+  z-index: 3;
+
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+}
+
+
+.omSeoCall,
+.omSeoWhatsapp {
+  min-height: 47px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 9px 15px;
+
+  border-radius: 10px;
+
+  text-decoration: none !important;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.omSeoCall {
+  background: #ffffff;
+
+  color: #075f7d !important;
+}
+
+
+.omSeoCall > i {
+  font-size: 14px;
+}
+
+
+.omSeoCall span {
+  display: flex;
+  flex-direction: column;
+
+  color: #075f7d;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  line-height: 1.3;
+}
+
+
+.omSeoCall small {
+  color: #6f8991;
+
+  font-size: 6px;
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+}
+
+
+.omSeoWhatsapp {
+  background: #438640;
+
+  color: #ffffff !important;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+
+.omSeoWhatsapp i {
+  font-size: 16px;
+}
+
+
+.omSeoCall:hover,
+.omSeoWhatsapp:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 991px) {
+
+  .omSeoArea {
+    padding: 50px 0 45px;
+  }
+
+
+  .omSeoHeading h2 {
+    font-size: 29px;
+  }
+
+
+  .omSeoRow {
+    grid-template-columns:
+      225px minmax(0, 1fr);
+  }
+
+
+  .omSeoRowTitle {
+    padding: 18px 15px;
+  }
+
+
+  .omSeoLinks {
+    padding: 18px;
+
+    gap: 8px;
+  }
+
+
+  .omSeoContact {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 767px) {
+
+  .omSeoArea {
+    padding: 42px 0 38px;
+  }
+
+
+  /* HEADING */
+
+  .omSeoHeading {
+    display: block;
+
+    margin-bottom: 28px;
+
+    text-align: center;
+  }
+
+
+  .omSeoHeadingIcon {
+    margin: 0 auto 13px;
+  }
+
+
+  .omSeoHeading h2 {
+    font-size: 25px;
+  }
+
+
+  .omSeoHeading p {
+    font-size: 11px;
+  }
+
+
+  /* ROW */
+
+  .omSeoRows {
+    border-radius: 14px;
+  }
+
+
+  .omSeoRow {
+    display: block;
+
+    min-height: auto;
+  }
+
+
+  .omSeoRowTitle {
+    border-right: none;
+    border-bottom: 1px solid #d9eaf0;
+
+    padding: 14px 15px;
+  }
+
+
+  .omSeoRowTitle::before {
+    top: 0;
+    bottom: auto;
+
+    width: 100%;
+    height: 2px;
+  }
+
+
+  .omSeoRowIcon {
+    width: 40px;
+    height: 40px;
+
+    flex-basis: 40px;
+  }
+
+
+  .omSeoRowTitleText h3 {
+    font-size: 13px;
+  }
+
+
+  /* BUTTONS */
+
+  .omSeoLinks {
+    padding: 15px;
+
+    gap: 7px;
+  }
+
+
+  .omSeoLinkBtn {
+    min-height: 34px;
+
+    padding: 6px 8px 6px 6px;
+
+    font-size: 9px;
+  }
+
+
+  .omSeoLinkPin {
+    width: 21px;
+    height: 21px;
+
+    flex-basis: 21px;
+  }
+
+
+  .omSeoLinkArrow {
+    display: none;
+  }
+
+
+  /* CTA */
+
+  .omSeoContact {
+    padding: 18px 15px;
+  }
+
+
+  .omSeoContactLeft {
+    align-items: flex-start;
+  }
+
+
+  .omSeoContactLeft h3 {
+    font-size: 14px;
+  }
+
+
+  .omSeoContactButtons {
+    width: 100%;
+  }
+
+
+  .omSeoCall,
+  .omSeoWhatsapp {
+    flex: 1;
+  }
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 480px) {
+
+  .omSeoHeading h2 {
+    font-size: 22px;
+  }
+
+
+  .omSeoHeadingIcon {
+    width: 50px;
+    height: 50px;
+
+    font-size: 18px;
+  }
+
+
+  .omSeoLinks {
+    gap: 6px;
+
+    padding: 13px;
+  }
+
+
+  .omSeoLinkBtn {
+    min-height: 33px;
+
+    font-size: 8.5px;
+
+    border-radius: 7px;
+  }
+
+
+  .omSeoContactButtons {
+    flex-direction: column;
+  }
+
+
+  .omSeoCall,
+  .omSeoWhatsapp {
+    width: 100%;
+  }
+
+
+  .omSeoContactIcon {
+    width: 44px;
+    height: 44px;
+
+    flex-basis: 44px;
+  }
+}

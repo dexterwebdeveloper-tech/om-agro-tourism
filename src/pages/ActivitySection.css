@@ -1,0 +1,759 @@
+/* =========================================================
+   OM AGRO TOURISM - ACTIVITY SECTION
+========================================================= */
+
+.om-activity-section {
+  position: relative;
+  overflow: hidden;
+
+  padding: 15px 0 90px;
+
+  background:
+    radial-gradient(
+      circle at 5% 10%,
+      rgba(67, 143, 72, 0.10),
+      transparent 23%
+    ),
+    radial-gradient(
+      circle at 95% 85%,
+      rgba(7, 143, 183, 0.12),
+      transparent 25%
+    ),
+    linear-gradient(
+      180deg,
+      #f7fdff 0%,
+      #eaf8fc 55%,
+      #f6fcf7 100%
+    );
+}
+
+
+/* =========================================================
+   DECORATIVE CIRCLES
+========================================================= */
+
+.om-activity-circle {
+  position: absolute;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.om-activity-circle.circle-one {
+  width: 240px;
+  height: 240px;
+
+  top: -120px;
+  left: -100px;
+
+  border: 35px solid rgba(7, 143, 183, 0.05);
+}
+
+.om-activity-circle.circle-two {
+  width: 300px;
+  height: 300px;
+
+  right: -150px;
+  bottom: -150px;
+
+  border: 45px solid rgba(67, 143, 72, 0.06);
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.om-activity-heading {
+  max-width: 800px;
+
+  margin: 0 auto 48px;
+}
+
+.om-activity-small-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  margin-bottom: 13px;
+
+  color: #078fb7;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.om-activity-small-title span {
+  display: inline-block;
+
+  width: 32px;
+  height: 2px;
+
+  background: #438f48;
+
+  border-radius: 20px;
+}
+
+.om-activity-heading h2 {
+  margin: 0 0 17px;
+
+  color: #173f2b;
+
+  font-size: 42px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.om-activity-heading h2 span {
+  color: #078fb7;
+}
+
+.om-activity-heading > p {
+  max-width: 720px;
+
+  margin: 0 auto;
+
+  color: #62747a;
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   ACTIVITY CARDS
+========================================================= */
+
+.om-activity-row {
+  position: relative;
+
+  z-index: 2;
+}
+
+.om-activity-card {
+  position: relative;
+
+  height: 100%;
+  min-height: 245px;
+
+  overflow: hidden;
+
+  padding: 30px 16px 25px;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  border: 1px solid #d7eef4;
+  border-radius: 18px;
+
+  text-align: center;
+
+  box-shadow:
+    0 10px 35px rgba(7, 95, 125, 0.08);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.om-activity-card:hover {
+  transform: translateY(-10px);
+
+  border-color: rgba(7, 143, 183, 0.35);
+
+  box-shadow:
+    0 20px 45px rgba(7, 95, 125, 0.15);
+}
+
+
+/* Number */
+
+.om-activity-number {
+  position: absolute;
+
+  top: 13px;
+  right: 15px;
+
+  color: rgba(7, 143, 183, 0.12);
+
+  font-size: 27px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.om-activity-icon-wrap {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 105px;
+  height: 105px;
+
+  margin: 0 auto 18px;
+
+  background: #eefafd;
+
+  border-radius: 50%;
+}
+
+.om-activity-icon-wrap::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 7px;
+
+  border: 1px dashed rgba(7, 143, 183, 0.28);
+  border-radius: 50%;
+
+  transition: transform 0.6s ease;
+}
+
+.om-activity-card:hover .om-activity-icon-wrap::before {
+  transform: rotate(90deg);
+}
+
+.om-activity-icon {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 72px;
+  height: 72px;
+
+  background: linear-gradient(
+    135deg,
+    #078fb7,
+    #38bdd9
+  );
+
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  font-size: 29px;
+
+  box-shadow:
+    0 10px 25px rgba(7, 143, 183, 0.25);
+
+  transition:
+    background 0.35s ease,
+    transform 0.35s ease;
+}
+
+.om-activity-card:hover .om-activity-icon {
+  background: linear-gradient(
+    135deg,
+    #438f48,
+    #65aa57
+  );
+
+  transform: scale(1.07);
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.om-activity-content h4 {
+  margin: 0 0 8px;
+
+  color: #173f2b;
+
+  font-size: 17px;
+  line-height: 1.3;
+  font-weight: 800;
+}
+
+.om-activity-content p {
+  margin: 0;
+
+  color: #748489;
+
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+
+/* Bottom Line */
+
+.om-activity-line {
+  position: absolute;
+
+  bottom: 0;
+  left: 50%;
+
+  width: 42px;
+  height: 4px;
+
+  background: #078fb7;
+
+  border-radius: 10px 10px 0 0;
+
+  transform: translateX(-50%);
+
+  transition:
+    width 0.35s ease,
+    background 0.35s ease;
+}
+
+.om-activity-card:hover .om-activity-line {
+  width: 100%;
+
+  background: #438f48;
+}
+
+
+/* =========================================================
+   BOTTOM INFO
+========================================================= */
+
+.om-activity-bottom {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  max-width: 730px;
+
+  margin: 38px auto 0;
+  padding: 16px 25px;
+
+  background: rgba(255, 255, 255, 0.75);
+
+  border: 1px solid rgba(67, 143, 72, 0.16);
+  border-radius: 50px;
+
+  box-shadow:
+    0 8px 30px rgba(23, 63, 43, 0.06);
+}
+
+.om-activity-bottom-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  flex: 0 0 42px;
+
+  background: #e9f6e8;
+
+  border-radius: 50%;
+
+  color: #438f48;
+
+  font-size: 17px;
+}
+
+.om-activity-bottom span {
+  display: block;
+
+  margin-bottom: 2px;
+
+  color: #078fb7;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 1.2px;
+
+  text-transform: uppercase;
+}
+
+.om-activity-bottom p {
+  margin: 0;
+
+  color: #40545a;
+
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1199px) {
+
+  .om-activity-section {
+    padding: 80px 0;
+  }
+
+  .om-activity-heading h2 {
+    font-size: 38px;
+  }
+
+  .om-activity-card {
+    min-height: 235px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+  .om-activity-section {
+    padding: 65px 0;
+  }
+
+  .om-activity-heading {
+    margin-bottom: 35px;
+  }
+
+  .om-activity-small-title {
+    gap: 8px;
+
+    font-size: 10px;
+    letter-spacing: 1.4px;
+  }
+
+  .om-activity-small-title span {
+    width: 22px;
+  }
+
+  .om-activity-heading h2 {
+    font-size: 31px;
+  }
+
+  .om-activity-heading > p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .om-activity-card {
+    min-height: 225px;
+
+    padding: 27px 14px 22px;
+  }
+
+  .om-activity-icon-wrap {
+    width: 95px;
+    height: 95px;
+  }
+
+  .om-activity-icon {
+    width: 65px;
+    height: 65px;
+
+    font-size: 26px;
+  }
+
+  .om-activity-bottom {
+    align-items: flex-start;
+
+    border-radius: 18px;
+
+    padding: 15px 17px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 575px) {
+
+  .om-activity-section {
+    padding: 55px 0;
+  }
+
+  .om-activity-heading h2 {
+    font-size: 27px;
+  }
+
+  .om-activity-heading > p {
+    font-size: 13px;
+  }
+
+  .om-activity-row > div {
+    width: 50%;
+  }
+
+  .om-activity-card {
+    min-height: 205px;
+
+    padding: 25px 8px 20px;
+
+    border-radius: 15px;
+  }
+
+  .om-activity-icon-wrap {
+    width: 82px;
+    height: 82px;
+
+    margin-bottom: 14px;
+  }
+
+  .om-activity-icon {
+    width: 56px;
+    height: 56px;
+
+    font-size: 22px;
+  }
+
+  .om-activity-content h4 {
+    font-size: 14px;
+  }
+
+  .om-activity-content p {
+    font-size: 10px;
+  }
+
+  .om-activity-number {
+    top: 10px;
+    right: 10px;
+
+    font-size: 21px;
+  }
+
+  .om-activity-bottom {
+    margin-top: 28px;
+  }
+
+  .om-activity-bottom p {
+    font-size: 11px;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .om-activity-row > div {
+    width: 100%;
+  }
+
+  .om-activity-card {
+    min-height: 210px;
+  }
+
+}
+
+
+
+
+
+
+
+
+.om-activity-icon {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 72px;
+  height: 72px;
+
+  background: linear-gradient(135deg, #078fb7, #38bdd9);
+  border-radius: 50%;
+
+  color: #ffffff;
+  font-size: 29px;
+
+  box-shadow: 0 10px 25px rgba(7, 143, 183, 0.25);
+
+  transition: all 0.35s ease;
+}
+
+.om-activity-icon i {
+  display: block !important;
+  color: #ffffff !important;
+  font-size: 29px !important;
+  line-height: 1 !important;
+}
+
+.om-activity-card:hover .om-activity-icon {
+  background: linear-gradient(135deg, #438f48, #65aa57);
+  transform: scale(1.07);
+}
+
+
+
+
+
+/* =========================================================
+   FIX ACTIVITY ICON POSITION
+========================================================= */
+
+.om-activity-icon-wrap {
+  position: relative !important;
+
+  width: 110px !important;
+  height: 110px !important;
+
+  margin: 0 auto 22px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  background: #eaf8fc !important;
+
+  border-radius: 50% !important;
+
+  overflow: visible !important;
+}
+
+
+/* dotted circle */
+
+.om-activity-icon-wrap::before {
+  content: "";
+
+  position: absolute !important;
+
+  top: 8px !important;
+  right: 8px !important;
+  bottom: 8px !important;
+  left: 8px !important;
+
+  width: auto !important;
+  height: auto !important;
+
+  border: 1px dashed #8ed8e9 !important;
+  border-radius: 50% !important;
+
+  pointer-events: none;
+
+  z-index: 1;
+}
+
+
+/* ACTUAL ICON CIRCLE */
+
+.om-activity-icon {
+  position: relative !important;
+
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+
+  transform: none !important;
+
+  width: 70px !important;
+  height: 70px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  flex: 0 0 70px !important;
+
+  background: linear-gradient(
+    135deg,
+    #078fb7,
+    #35bcd9
+  ) !important;
+
+  border: 5px solid #ffffff !important;
+  border-radius: 50% !important;
+
+  color: #ffffff !important;
+
+  box-shadow:
+    0 8px 22px rgba(7, 143, 183, 0.25) !important;
+
+  z-index: 5 !important;
+
+  overflow: hidden !important;
+
+  transition: all 0.3s ease !important;
+}
+
+
+/* FONT AWESOME ICON */
+
+.om-activity-icon i {
+  position: static !important;
+
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+
+  transform: none !important;
+
+  display: inline-block !important;
+
+  width: auto !important;
+  height: auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #ffffff !important;
+
+  font-size: 28px !important;
+  line-height: 1 !important;
+
+  background: transparent !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  box-shadow: none !important;
+}
+
+
+/* Hover */
+
+.om-activity-card:hover .om-activity-icon {
+  background: linear-gradient(
+    135deg,
+    #34863d,
+    #5ca84e
+  ) !important;
+
+  transform: scale(1.07) !important;
+}
+
+
+/* Keep dotted border animation */
+
+.om-activity-card:hover .om-activity-icon-wrap::before {
+  transform: rotate(90deg);
+}

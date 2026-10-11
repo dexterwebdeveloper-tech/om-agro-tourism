@@ -1,0 +1,694 @@
+/* ==========================================================
+   OM AGRO TOURISM - NEARBY PLACES
+========================================================== */
+
+.om-nearby-section {
+  position: relative;
+  overflow: hidden;
+  /* padding: 90px 0; */
+
+  background:
+    radial-gradient(
+      circle at 5% 10%,
+      rgba(76, 147, 67, 0.08),
+      transparent 22%
+    ),
+    radial-gradient(
+      circle at 95% 90%,
+      rgba(239, 151, 39, 0.08),
+      transparent 22%
+    ),
+    #f8faf5;
+}
+
+
+/* ==========================================================
+   HEADING
+========================================================== */
+
+.om-nearby-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 50px;
+
+  margin-bottom: 45px;
+}
+
+
+.om-nearby-heading-left {
+  width: 55%;
+}
+
+
+.om-nearby-heading-right {
+  width: 42%;
+}
+
+
+.om-nearby-subtitle {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 10px;
+
+  color: #277ABF;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+
+.om-nearby-subtitle::before {
+  content: "";
+
+  width: 32px;
+  height: 2px;
+
+  background: #277ABF;
+}
+
+
+.om-nearby-heading h2 {
+  margin: 0;
+
+  color: #173f2b;
+
+  font-size: 46px;
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+
+.om-nearby-heading h2 span {
+  color: #28AECE;
+}
+
+
+.om-nearby-heading-right p {
+  margin: 0;
+
+  padding-left: 22px;
+
+  color: #6c766e;
+
+  border-left: 3px solid #277ABF;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* ==========================================================
+   CARD
+========================================================== */
+
+.om-nearby-card {
+  height: 100%;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #e1e9de;
+  border-radius: 22px;
+
+  box-shadow:
+    0 12px 35px rgba(32, 77, 37, 0.08);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+.om-nearby-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 22px 50px rgba(32, 77, 37, 0.15);
+}
+
+
+/* ==========================================================
+   IMAGE
+========================================================== */
+
+.om-nearby-image {
+  position: relative;
+
+  height: 250px;
+
+  overflow: hidden;
+}
+
+
+.om-nearby-image::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(17, 55, 31, 0.02) 30%,
+      rgba(17, 55, 31, 0.55) 100%
+    );
+
+  pointer-events: none;
+}
+
+
+.om-nearby-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.55s ease;
+}
+
+
+.om-nearby-card:hover .om-nearby-image img {
+  transform: scale(1.07);
+}
+
+
+/* ==========================================================
+   NUMBER
+========================================================== */
+
+.om-nearby-number {
+  position: absolute;
+
+  top: 16px;
+  left: 16px;
+
+  z-index: 3;
+
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+
+  color: #34793a;
+
+  border-radius: 50%;
+
+  font-size: 11px;
+  font-weight: 900;
+
+  box-shadow:
+    0 7px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ==========================================================
+   CATEGORY
+========================================================== */
+
+.om-nearby-category {
+  position: absolute;
+
+  left: 16px;
+  bottom: 16px;
+
+  z-index: 3;
+
+  padding: 8px 14px;
+
+  background: #277ABF;
+
+  color: #ffffff;
+
+  border-radius: 50px;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+}
+
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+.om-nearby-content {
+  padding: 24px;
+}
+
+
+/* TITLE */
+
+.om-nearby-title-row {
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  margin-bottom: 14px;
+}
+
+
+.om-nearby-icon {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: #edf6e9;
+
+  color: #41833f;
+
+  border-radius: 13px;
+
+  font-size: 16px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.om-nearby-card:hover .om-nearby-icon {
+  background: #41833f;
+
+  color: #ffffff;
+
+  transform: rotate(-5deg);
+}
+
+
+.om-nearby-title-row h3 {
+  margin: 0;
+
+  color: #173f2b;
+
+  font-size: 19px;
+  line-height: 1.35;
+  font-weight: 800;
+}
+
+
+/* DESCRIPTION */
+
+.om-nearby-content > p {
+  min-height: 112px;
+
+  margin: 0 0 20px;
+
+  color: #6c756e;
+
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+
+/* ==========================================================
+   CARD BOTTOM
+========================================================== */
+
+.om-nearby-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 17px;
+
+  border-top: 1px solid #e4ebe1;
+}
+
+
+.om-nearby-link {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 9px;
+
+  color: #397d3c;
+
+  text-decoration: none;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  transition: color 0.3s ease;
+}
+
+
+.om-nearby-link i {
+  color: #277ABF;
+
+  transition: transform 0.3s ease;
+}
+
+
+.om-nearby-link:hover {
+  color: #277ABF;
+}
+
+
+.om-nearby-link:hover i {
+  transform: translateX(5px);
+}
+
+
+.om-nearby-leaf {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f3f7ef;
+
+  color: #28AECE;
+
+  border-radius: 50%;
+
+  font-size: 11px;
+}
+
+
+/* ==========================================================
+   BOTTOM CTA
+========================================================== */
+
+.om-nearby-cta {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+
+  margin-top: 50px;
+  padding: 27px 30px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      120deg,
+      #173f2b 0%,
+      #2b7038 65%,
+      #28AECE 100%
+    );
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 15px 40px rgba(32, 82, 39, 0.18);
+}
+
+
+.om-nearby-cta::after {
+  content: "";
+
+  position: absolute;
+
+  width: 170px;
+  height: 170px;
+
+  right: 140px;
+  top: -110px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  border-radius: 50%;
+}
+
+
+/* CTA ICON */
+
+.om-nearby-cta-icon {
+  position: relative;
+  z-index: 2;
+
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: #277ABF;
+
+  color: #ffffff;
+
+  border-radius: 18px;
+
+  font-size: 23px;
+}
+
+
+/* CTA CONTENT */
+
+.om-nearby-cta-content {
+  position: relative;
+  z-index: 2;
+
+  flex: 1;
+}
+
+
+.om-nearby-cta-content > span {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #ffb95e;
+
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+
+.om-nearby-cta-content h3 {
+  margin: 0 0 4px;
+
+  color: #ffffff;
+
+  font-size: 21px;
+  font-weight: 800;
+}
+
+
+.om-nearby-cta-content p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  font-size: 12px;
+}
+
+
+/* CTA BUTTON */
+
+.om-nearby-cta-btn {
+  position: relative;
+  z-index: 2;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  flex-shrink: 0;
+
+  padding: 14px 22px;
+
+  background: #ffffff;
+
+  color: #2f7339;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.om-nearby-cta-btn:hover {
+  background: #277ABF;
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+
+.om-nearby-cta-btn i {
+  transition: transform 0.3s ease;
+}
+
+
+.om-nearby-cta-btn:hover i {
+  transform: translateX(4px);
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 991px) {
+
+  .om-nearby-section {
+    padding: 70px 0;
+  }
+
+
+  .om-nearby-heading {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+
+  .om-nearby-heading-left,
+  .om-nearby-heading-right {
+    width: 100%;
+  }
+
+
+  .om-nearby-heading h2 {
+    font-size: 38px;
+  }
+
+
+  .om-nearby-content > p {
+    min-height: auto;
+  }
+
+
+  .om-nearby-cta {
+    flex-wrap: wrap;
+  }
+
+
+  .om-nearby-cta-content {
+    width: calc(100% - 90px);
+  }
+
+
+  .om-nearby-cta-btn {
+    margin-left: 85px;
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 767px) {
+
+  .om-nearby-section {
+    padding: 55px 0;
+  }
+
+
+  .om-nearby-heading {
+    margin-bottom: 32px;
+  }
+
+
+  .om-nearby-heading h2 {
+    font-size: 30px;
+  }
+
+
+  .om-nearby-heading-right p {
+    font-size: 13px;
+  }
+
+
+  .om-nearby-image {
+    height: 240px;
+  }
+
+
+  .om-nearby-cta {
+    align-items: flex-start;
+    flex-direction: column;
+
+    padding: 24px;
+  }
+
+
+  .om-nearby-cta-content {
+    width: 100%;
+  }
+
+
+  .om-nearby-cta-btn {
+    width: 100%;
+
+    margin-left: 0;
+  }
+
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 480px) {
+
+  .om-nearby-heading h2 {
+    font-size: 27px;
+  }
+
+
+  .om-nearby-image {
+    height: 215px;
+  }
+
+
+  .om-nearby-content {
+    padding: 20px;
+  }
+
+
+  .om-nearby-title-row h3 {
+    font-size: 17px;
+  }
+
+
+  .om-nearby-cta-content h3 {
+    font-size: 19px;
+  }
+
+}

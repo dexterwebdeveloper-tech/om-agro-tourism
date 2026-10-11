@@ -1,0 +1,789 @@
+/* =========================================================
+   OM AGRO TOURISM FAQ SECTION
+========================================================= */
+
+.om-faq-section {
+  position: relative;
+  padding: 90px 0;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 5% 10%,
+      rgba(76, 147, 67, 0.08),
+      transparent 22%
+    ),
+    radial-gradient(
+      circle at 95% 90%,
+      rgba(239, 151, 39, 0.08),
+      transparent 22%
+    ),
+    #f8faf5;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.om-faq-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 50px;
+
+  margin-bottom: 45px;
+}
+
+
+.om-faq-heading-left {
+  width: 55%;
+}
+
+
+.om-faq-heading-right {
+  width: 42%;
+}
+
+
+.om-faq-subtitle {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 10px;
+
+  color: #277ABF;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+
+.om-faq-subtitle::before {
+  content: "";
+
+  width: 32px;
+  height: 2px;
+
+  background: #277ABF;
+}
+
+
+.om-faq-heading-left h2 {
+  margin: 0;
+
+  color: #173f2b;
+
+  font-size: 46px;
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+
+.om-faq-heading-left h2 span {
+  color: #28AECE;
+}
+
+
+.om-faq-heading-right p {
+  margin: 0;
+
+  padding-left: 22px;
+
+  border-left: 3px solid #277ABF;
+
+  color: #6c766e;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   LEFT INFORMATION CARD
+========================================================= */
+
+.om-faq-info-card {
+  position: relative;
+
+  padding: 35px 30px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      145deg,
+      #173f2b 0%,
+      #276b36 65%,
+      #438d42 100%
+    );
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 20px 50px rgba(26, 74, 35, 0.16);
+}
+
+
+.om-faq-info-card::after {
+  content: "";
+
+  position: absolute;
+
+  right: -80px;
+  top: -80px;
+
+  width: 180px;
+  height: 180px;
+
+  border: 30px solid rgba(255, 255, 255, 0.05);
+
+  border-radius: 50%;
+}
+
+
+.om-faq-small-title {
+  position: relative;
+  z-index: 2;
+
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #ffb34d;
+
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 1.7px;
+}
+
+
+.om-faq-info-card h3 {
+  position: relative;
+  z-index: 2;
+
+  margin: 0 0 14px;
+
+  color: #ffffff;
+
+  font-size: 25px;
+  line-height: 1.35;
+  font-weight: 800;
+}
+
+
+.om-faq-info-card > p {
+  position: relative;
+  z-index: 2;
+
+  margin: 0 0 28px;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.om-faq-feature {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 15px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+
+.om-faq-feature-icon {
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  color: #ffb34d;
+
+  border-radius: 12px;
+
+  font-size: 16px;
+}
+
+
+.om-faq-feature strong {
+  display: block;
+
+  margin-bottom: 2px;
+
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+.om-faq-feature span {
+  display: block;
+
+  color: rgba(255, 255, 255, 0.58);
+
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   WHATSAPP BUTTON
+========================================================= */
+
+.om-faq-whatsapp-btn {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  margin-top: 24px;
+  padding: 14px 20px;
+
+  background: #277ABF;
+
+  color: #ffffff;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  transition: all 0.3s ease;
+}
+
+
+.om-faq-whatsapp-btn i {
+  font-size: 17px;
+}
+
+
+.om-faq-whatsapp-btn:hover {
+  background: #ffffff;
+
+  color: #31783b;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   FAQ LIST
+========================================================= */
+
+.om-faq-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+
+/* FAQ ITEM */
+
+.om-faq-item {
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #dfe8dc;
+  border-radius: 16px;
+
+  box-shadow:
+    0 7px 25px rgba(28, 74, 34, 0.05);
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.om-faq-item:hover {
+  border-color: #bcd7b5;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 30px rgba(28, 74, 34, 0.09);
+}
+
+
+.om-faq-item.om-faq-active {
+  border-color: #28AECE;
+
+  box-shadow:
+    0 14px 35px rgba(49, 120, 59, 0.1);
+}
+
+
+/* =========================================================
+   QUESTION
+========================================================= */
+
+.om-faq-question {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 16px 18px;
+
+  background: transparent;
+
+  border: 0;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+
+/* NUMBER */
+
+.om-faq-question-number {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: #edf5e9;
+
+  color: #438640;
+
+  border-radius: 11px;
+
+  font-size: 10px;
+  font-weight: 900;
+
+  transition: all 0.3s ease;
+}
+
+
+.om-faq-active .om-faq-question-number {
+  background: #277ABF;
+
+  color: #ffffff;
+}
+
+
+/* QUESTION TEXT */
+
+.om-faq-question-text {
+  flex: 1;
+
+  color: #173f2b;
+
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 750;
+}
+
+
+/* PLUS / MINUS */
+
+.om-faq-toggle {
+  width: 35px;
+  height: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: #f4f7f1;
+
+  color: #3e8240;
+
+  border-radius: 50%;
+
+  font-size: 11px;
+
+  transition: all 0.3s ease;
+}
+
+
+.om-faq-active .om-faq-toggle {
+  background: #438640;
+
+  color: #ffffff;
+
+  transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   ANSWER
+========================================================= */
+
+.om-faq-answer {
+  max-height: 0;
+
+  overflow: hidden;
+
+  opacity: 0;
+
+  transition:
+    max-height 0.45s ease,
+    opacity 0.35s ease;
+}
+
+
+.om-faq-answer.show {
+  max-height: 350px;
+
+  opacity: 1;
+}
+
+
+.om-faq-answer-inner {
+  display: flex;
+
+  gap: 15px;
+
+  padding: 0 22px 22px 73px;
+}
+
+
+.om-faq-answer-line {
+  width: 3px;
+
+  flex-shrink: 0;
+
+  background: #277ABF;
+
+  border-radius: 20px;
+}
+
+
+.om-faq-answer p {
+  margin: 0;
+
+  color: #68736a;
+
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   BOTTOM HELP BAR
+========================================================= */
+
+.om-faq-bottom {
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  margin-top: 45px;
+  padding: 24px 28px;
+
+  background: #ffffff;
+
+  border: 1px solid #e0e8dc;
+  border-radius: 20px;
+
+  box-shadow:
+    0 12px 35px rgba(28, 74, 34, 0.07);
+}
+
+
+.om-faq-bottom-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: #edf5e9;
+
+  color: #438640;
+
+  border-radius: 16px;
+
+  font-size: 20px;
+}
+
+
+.om-faq-bottom-content {
+  flex: 1;
+}
+
+
+.om-faq-bottom-content > span {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #277ABF;
+
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+
+.om-faq-bottom-content h4 {
+  margin: 0 0 3px;
+
+  color: #173f2b;
+
+  font-size: 18px;
+  font-weight: 800;
+}
+
+
+.om-faq-bottom-content p {
+  margin: 0;
+
+  color: #7a837b;
+
+  font-size: 11px;
+}
+
+
+/* CONTACT */
+
+.om-faq-bottom-contact a {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 12px 18px;
+
+  background: #173f2b;
+
+  color: #ffffff;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  transition: background 0.3s ease;
+}
+
+
+.om-faq-bottom-contact a > i {
+  width: 35px;
+  height: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #277ABF;
+
+  border-radius: 50%;
+}
+
+
+.om-faq-bottom-contact span {
+  display: block;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 8px;
+}
+
+
+.om-faq-bottom-contact strong {
+  display: block;
+
+  color: #ffffff;
+
+  font-size: 11px;
+}
+
+
+.om-faq-bottom-contact a:hover {
+  background: #367c3c;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+  .om-faq-section {
+    padding: 70px 0;
+  }
+
+
+  .om-faq-header {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+
+  .om-faq-heading-left,
+  .om-faq-heading-right {
+    width: 100%;
+  }
+
+
+  .om-faq-heading-left h2 {
+    font-size: 38px;
+  }
+
+
+  .om-faq-info-card {
+    margin-bottom: 10px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+  .om-faq-section {
+    padding: 55px 0;
+  }
+
+
+  .om-faq-header {
+    margin-bottom: 30px;
+  }
+
+
+  .om-faq-heading-left h2 {
+    font-size: 30px;
+  }
+
+
+  .om-faq-heading-right p {
+    font-size: 12px;
+  }
+
+
+  .om-faq-question {
+    gap: 10px;
+
+    padding: 14px;
+  }
+
+
+  .om-faq-question-number {
+    width: 35px;
+    height: 35px;
+  }
+
+
+  .om-faq-question-text {
+    font-size: 12px;
+  }
+
+
+  .om-faq-toggle {
+    width: 31px;
+    height: 31px;
+  }
+
+
+  .om-faq-answer-inner {
+    padding:
+      0 18px 18px 59px;
+  }
+
+
+  .om-faq-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  .om-faq-bottom-contact {
+    width: 100%;
+  }
+
+
+  .om-faq-bottom-contact a {
+    justify-content: center;
+
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .om-faq-heading-left h2 {
+    font-size: 27px;
+  }
+
+
+  .om-faq-info-card {
+    padding: 27px 22px;
+  }
+
+
+  .om-faq-info-card h3 {
+    font-size: 22px;
+  }
+
+
+  .om-faq-answer-inner {
+    padding:
+      0 15px 17px 15px;
+  }
+
+
+  .om-faq-question-text {
+    line-height: 1.4;
+  }
+
+}

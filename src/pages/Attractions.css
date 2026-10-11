@@ -1,0 +1,1065 @@
+/* ==========================================================
+   OM AGRO TOURISM - ATTRACTIONS
+========================================================== */
+
+.om-attraction-section {
+  position: relative;
+  overflow: hidden;
+
+  /* padding: 90px 0; */
+
+  background:
+    radial-gradient(
+      circle at 5% 10%,
+      rgba(84, 151, 64, 0.09),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 95% 90%,
+      rgba(242, 156, 42, 0.08),
+      transparent 25%
+    ),
+    #f8faf5;
+}
+
+
+/* ==========================================================
+   SECTION HEADING
+========================================================== */
+
+.om-attraction-heading {
+  max-width: 800px;
+
+  margin: 0 auto 48px;
+}
+
+
+.om-attraction-heading-small {
+  position: relative;
+
+  display: inline-block;
+
+  margin-bottom: 10px;
+
+  color: #277ABF;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+.om-attraction-heading-small::before,
+.om-attraction-heading-small::after {
+  content: "";
+
+  display: inline-block;
+
+  width: 28px;
+  height: 2px;
+
+  margin: 0 10px 4px;
+
+  background: #277ABF;
+}
+
+
+.om-attraction-heading h2 {
+  margin-bottom: 14px;
+
+  color: #173f2b;
+
+  font-size: 46px;
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+
+.om-attraction-heading h2 span {
+  color: #4c9b45;
+}
+
+
+.om-attraction-heading p {
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  color: #69766b;
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+
+/* ==========================================================
+   MAIN CARD
+========================================================== */
+
+.om-attraction-item {
+  position: relative;
+
+  display: flex;
+
+  height: 100%;
+  min-height: 310px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #e1e9dc;
+  border-radius: 22px;
+
+  box-shadow:
+    0 12px 35px rgba(39, 79, 35, 0.08);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+.om-attraction-item:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 22px 50px rgba(39, 79, 35, 0.14);
+}
+
+
+/* GREEN TOP ACCENT */
+
+.om-attraction-item::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  z-index: 5;
+
+  width: 100%;
+  height: 4px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #2f713a,
+      #58a448,
+      #277ABF
+    );
+}
+
+
+/* ==========================================================
+   IMAGE SIDE
+========================================================== */
+
+.om-attraction-photo {
+  position: relative;
+
+  width: 43%;
+  min-width: 43%;
+
+  overflow: hidden;
+}
+
+
+.om-attraction-photo::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      transparent 50%,
+      rgba(17, 58, 34, 0.28)
+    );
+
+  pointer-events: none;
+}
+
+
+.om-attraction-photo img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.55s ease;
+}
+
+
+.om-attraction-item:hover .om-attraction-photo img {
+  transform: scale(1.07);
+}
+
+
+/* NUMBER */
+
+.om-attraction-count {
+  position: absolute;
+
+  top: 18px;
+  left: 18px;
+
+  z-index: 3;
+
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  color: #35753a;
+
+  border-radius: 50%;
+
+  font-size: 12px;
+  font-weight: 900;
+
+  box-shadow:
+    0 7px 18px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ==========================================================
+   CONTENT SIDE
+========================================================== */
+
+.om-attraction-details {
+  position: relative;
+
+  width: 57%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 32px 28px;
+}
+
+
+/* ICON */
+
+.om-attraction-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 17px;
+
+  background: #edf6e9;
+
+  color: #458a3f;
+
+  border-radius: 13px;
+
+  font-size: 18px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.om-attraction-item:hover .om-attraction-icon {
+  background: #277ABF;
+
+  color: #ffffff;
+
+  transform: rotate(-5deg);
+}
+
+
+/* SMALL LABEL */
+
+.om-attraction-label {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #277ABF;
+
+  font-size: 9px;
+  font-weight: 900;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* TITLE */
+
+.om-attraction-details h3 {
+  margin-bottom: 11px;
+
+  color: #173f2b;
+
+  font-size: 23px;
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+
+/* DESCRIPTION */
+
+.om-attraction-details > p {
+  margin-bottom: 20px;
+
+  color: #69736a;
+
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+
+/* ==========================================================
+   CARD BOTTOM
+========================================================== */
+
+.om-attraction-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: auto;
+
+  padding-top: 15px;
+
+  border-top: 1px solid #e7ede3;
+}
+
+
+.om-attraction-nature {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: #4d7950;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+
+.om-attraction-nature i {
+  color: #59a44b;
+}
+
+
+/* ARROW */
+
+.om-attraction-arrow {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #173f2b;
+
+  color: #ffffff;
+
+  border-radius: 50%;
+
+  text-decoration: none;
+
+  font-size: 11px;
+
+  transition: all 0.3s ease;
+}
+
+
+.om-attraction-arrow:hover {
+  background: #277ABF;
+
+  color: #ffffff;
+
+  transform: translateX(3px);
+}
+
+
+/* ==========================================================
+   ALTERNATE CARD DESIGN
+========================================================== */
+
+/* Second card in every pair gets image on right */
+
+.om-attraction-section
+.row
+> div:nth-child(even)
+.om-attraction-item {
+  flex-direction: row-reverse;
+}
+
+
+/* ==========================================================
+   BOTTOM CTA
+========================================================== */
+
+.om-attraction-cta {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+
+  margin-top: 50px;
+
+  padding: 26px 30px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #173f2b 0%,
+      #2d713c 55%,
+      #4c9845 100%
+    );
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 15px 40px rgba(30, 82, 41, 0.18);
+}
+
+
+.om-attraction-cta::after {
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  right: -60px;
+  top: -90px;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  border-radius: 50%;
+}
+
+
+/* CTA ICON */
+
+.om-attraction-cta-icon {
+  position: relative;
+  z-index: 2;
+
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: rgba(255, 255, 255, 0.11);
+
+  color: #f5ad4b;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+
+  font-size: 23px;
+}
+
+
+/* CTA CONTENT */
+
+.om-attraction-cta-content {
+  position: relative;
+  z-index: 2;
+
+  flex: 1;
+}
+
+
+.om-attraction-cta-content span {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #f7b45a;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+
+.om-attraction-cta-content h3 {
+  margin: 0 0 4px;
+
+  color: #ffffff;
+
+  font-size: 21px;
+  font-weight: 800;
+}
+
+
+.om-attraction-cta-content p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  font-size: 12px;
+}
+
+
+/* CTA BUTTON */
+
+.om-attraction-cta-btn {
+  position: relative;
+  z-index: 2;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 14px 22px;
+
+  background: #277ABF;
+
+  color: #ffffff;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  white-space: nowrap;
+
+  transition: all 0.3s ease;
+}
+
+
+.om-attraction-cta-btn:hover {
+  background: #ffffff;
+
+  color: #173f2b;
+
+  transform: translateY(-2px);
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 1199px) {
+
+  .om-attraction-item {
+    min-height: 290px;
+  }
+
+
+  .om-attraction-photo {
+    width: 40%;
+    min-width: 40%;
+  }
+
+
+  .om-attraction-details {
+    width: 60%;
+
+    padding: 27px 22px;
+  }
+
+
+  .om-attraction-details h3 {
+    font-size: 20px;
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE / TABLET
+========================================================== */
+
+@media (max-width: 991px) {
+
+  .om-attraction-section {
+    padding: 70px 0;
+  }
+
+
+  .om-attraction-heading h2 {
+    font-size: 37px;
+  }
+
+
+  .om-attraction-item,
+  .om-attraction-section
+  .row
+  > div:nth-child(even)
+  .om-attraction-item {
+    flex-direction: row;
+  }
+
+
+  .om-attraction-cta {
+    flex-wrap: wrap;
+  }
+
+
+  .om-attraction-cta-btn {
+    margin-left: 82px;
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 767px) {
+
+  .om-attraction-section {
+    padding: 55px 0;
+  }
+
+
+  .om-attraction-heading {
+    margin-bottom: 35px;
+  }
+
+
+  .om-attraction-heading h2 {
+    font-size: 30px;
+  }
+
+
+  .om-attraction-heading-small::before,
+  .om-attraction-heading-small::after {
+    width: 15px;
+
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+
+  .om-attraction-item,
+  .om-attraction-section
+  .row
+  > div:nth-child(even)
+  .om-attraction-item {
+    display: block;
+  }
+
+
+  .om-attraction-photo {
+    width: 100%;
+    min-width: 100%;
+    height: 240px;
+  }
+
+
+  .om-attraction-details {
+    width: 100%;
+
+    padding: 27px 22px;
+  }
+
+
+  .om-attraction-icon {
+    position: absolute;
+
+    top: -25px;
+    right: 22px;
+
+    z-index: 5;
+
+    border: 4px solid #ffffff;
+  }
+
+
+  .om-attraction-details h3 {
+    font-size: 21px;
+  }
+
+
+  .om-attraction-cta {
+    align-items: flex-start;
+
+    padding: 24px 20px;
+  }
+
+
+  .om-attraction-cta-content h3 {
+    font-size: 18px;
+  }
+
+
+  .om-attraction-cta-btn {
+    width: 100%;
+
+    margin-left: 0;
+  }
+
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 480px) {
+
+  .om-attraction-heading h2 {
+    font-size: 27px;
+  }
+
+
+  .om-attraction-photo {
+    height: 220px;
+  }
+
+
+  .om-attraction-details {
+    padding: 26px 19px 22px;
+  }
+
+
+  .om-attraction-cta-icon {
+    width: 50px;
+    height: 50px;
+
+    font-size: 18px;
+  }
+
+}
+
+
+
+/* ==========================================================
+   OM AGRO TOURISM
+   SKY BLUE COLOR OVERRIDE
+   MOST BLUE + VERY LESS GREEN
+========================================================== */
+
+
+/* ================= SECTION BACKGROUND ================= */
+
+.om-attraction-section {
+  background:
+    radial-gradient(
+      circle at 5% 10%,
+      rgba(56, 189, 217, 0.15),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 95% 90%,
+      rgba(7, 143, 183, 0.10),
+      transparent 27%
+    ),
+    linear-gradient(
+      180deg,
+      #f5fcfe 0%,
+      #edf9fc 100%
+    ) !important;
+}
+
+
+/* ================= SMALL HEADING ================= */
+
+.om-attraction-heading-small {
+  color: #078db5 !important;
+}
+
+.om-attraction-heading-small::before,
+.om-attraction-heading-small::after {
+  background: #38bdd9 !important;
+}
+
+
+/* ================= MAIN HEADING ================= */
+
+.om-attraction-heading h2 {
+  color: #075f7d !important;
+}
+
+.om-attraction-heading h2 span {
+  color: #078fb7 !important;
+}
+
+
+/* Description */
+
+.om-attraction-heading p {
+  color: #617b84 !important;
+}
+
+
+/* ================= CARDS ================= */
+
+.om-attraction-item {
+  background: #ffffff !important;
+
+  border-color: #d5edf3 !important;
+
+  box-shadow:
+    0 12px 35px rgba(7, 95, 125, 0.08) !important;
+}
+
+
+.om-attraction-item:hover {
+  box-shadow:
+    0 22px 50px rgba(7, 95, 125, 0.15) !important;
+}
+
+
+/* ================= TOP ACCENT ================= */
+
+.om-attraction-item::before {
+  background:
+    linear-gradient(
+      90deg,
+      #078db5 0%,
+      #38bdd9 70%,
+      #5ac7d9 100%
+    ) !important;
+}
+
+
+/* ================= IMAGE OVERLAY ================= */
+
+.om-attraction-photo::after {
+  background:
+    linear-gradient(
+      180deg,
+      transparent 50%,
+      rgba(5, 95, 125, 0.25)
+    ) !important;
+}
+
+
+/* ================= NUMBER ================= */
+
+.om-attraction-count {
+  background: rgba(255, 255, 255, 0.95) !important;
+
+  color: #078db5 !important;
+
+  box-shadow:
+    0 7px 18px rgba(7, 95, 125, 0.14) !important;
+}
+
+
+/* ================= ICON ================= */
+
+.om-attraction-icon {
+  background: #e9f8fc !important;
+
+  color: #078db5 !important;
+}
+
+
+.om-attraction-item:hover .om-attraction-icon {
+  background:
+    linear-gradient(
+      135deg,
+      #078db5,
+      #38bdd9
+    ) !important;
+
+  color: #ffffff !important;
+}
+
+
+/* ================= LABEL ================= */
+
+.om-attraction-label {
+  color: #078db5 !important;
+}
+
+
+/* ================= CARD TITLE ================= */
+
+.om-attraction-details h3 {
+  color: #075f7d !important;
+}
+
+
+/* ================= DESCRIPTION ================= */
+
+.om-attraction-details > p {
+  color: #687e85 !important;
+}
+
+
+/* ================= CARD BOTTOM BORDER ================= */
+
+.om-attraction-bottom {
+  border-top-color: #dceff3 !important;
+}
+
+
+/* ================= NATURE TEXT ================= */
+
+/* Small green accent kept intentionally */
+
+.om-attraction-nature {
+  color: #438640 !important;
+}
+
+
+.om-attraction-nature i {
+  color: #28AECE !important;
+}
+
+
+/* ================= ARROW ================= */
+
+.om-attraction-arrow {
+  background: #078db5 !important;
+
+  color: #ffffff !important;
+}
+
+
+.om-attraction-arrow:hover {
+  background: #38bdd9 !important;
+
+  color: #ffffff !important;
+}
+
+
+/* ==========================================================
+   BOTTOM CTA
+========================================================== */
+
+.om-attraction-cta {
+  background:
+    linear-gradient(
+      135deg,
+      #075f7d 0%,
+      #078db5 55%,
+      #38bdd9 100%
+    ) !important;
+
+  box-shadow:
+    0 15px 40px rgba(7, 95, 125, 0.20) !important;
+}
+
+
+/* CTA DECORATION */
+
+.om-attraction-cta::after {
+  background: rgba(255, 255, 255, 0.07) !important;
+}
+
+
+/* ================= CTA ICON ================= */
+
+.om-attraction-cta-icon {
+  background: rgba(255, 255, 255, 0.14) !important;
+
+  color: #ffffff !important;
+
+  border-color: rgba(255, 255, 255, 0.20) !important;
+}
+
+
+/* ================= CTA SMALL TEXT ================= */
+
+.om-attraction-cta-content span {
+  color: #bdeef6 !important;
+}
+
+
+/* ================= CTA TITLE ================= */
+
+.om-attraction-cta-content h3 {
+  color: #ffffff !important;
+}
+
+
+/* ================= CTA DESCRIPTION ================= */
+
+.om-attraction-cta-content p {
+  color: rgba(255, 255, 255, 0.78) !important;
+}
+
+
+/* ================= CTA BUTTON ================= */
+
+.om-attraction-cta-btn {
+  background: #ffffff !important;
+
+  color: #075f7d !important;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.10) !important;
+}
+
+
+.om-attraction-cta-btn:hover {
+  background: #438640 !important;
+
+  color: #ffffff !important;
+
+  box-shadow:
+    0 10px 25px rgba(67, 134, 64, 0.22) !important;
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 767px) {
+
+  .om-attraction-icon {
+    background: #e8f8fc !important;
+
+    border-color: #ffffff !important;
+
+    color: #078db5 !important;
+  }
+
+
+  .om-attraction-item:hover .om-attraction-icon {
+    background: #078db5 !important;
+
+    color: #ffffff !important;
+  }
+
+
+  .om-attraction-cta {
+    background:
+      linear-gradient(
+        145deg,
+        #075f7d 0%,
+        #078db5 65%,
+        #38bdd9 100%
+      ) !important;
+  }
+}

@@ -1,0 +1,682 @@
+/* =========================================================
+   OM AGRO TOURISM - EVENTS
+========================================================= */
+
+.om-events-section {
+  position: relative;
+  overflow: hidden;
+
+  /* padding: 90px 0; */
+
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(239, 151, 39, 0.08),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 0% 100%,
+      rgba(73, 145, 63, 0.08),
+      transparent 28%
+    ),
+    #f8faf5;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.om-events-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 50px;
+
+  margin-bottom: 45px;
+}
+
+
+.om-events-heading-left {
+  width: 55%;
+}
+
+
+.om-events-heading-right {
+  width: 42%;
+}
+
+
+.om-events-subtitle {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 10px;
+
+  color: #277ABF;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+.om-events-subtitle::before {
+  content: "";
+
+  width: 32px;
+  height: 2px;
+
+  background: #277ABF;
+}
+
+
+.om-events-heading h2 {
+  margin: 0;
+
+  color: #173f2b;
+
+  font-size: 46px;
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+
+.om-events-heading h2 span {
+  color: #28AECE;
+}
+
+
+.om-events-heading-right p {
+  margin: 0;
+
+  padding-left: 22px;
+
+  color: #667168;
+
+  border-left: 3px solid #277ABF;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   EVENT CARD
+========================================================= */
+
+.om-event-card {
+  position: relative;
+
+  height: 100%;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #e3eadf;
+  border-radius: 24px;
+
+  box-shadow:
+    0 12px 35px rgba(36, 77, 36, 0.08);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+.om-event-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 22px 50px rgba(36, 77, 36, 0.15);
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.om-event-image {
+  position: relative;
+
+  height: 265px;
+
+  margin: 10px;
+
+  overflow: hidden;
+
+  border-radius: 18px;
+}
+
+
+.om-event-image::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(13, 49, 28, 0.02) 30%,
+      rgba(13, 49, 28, 0.55) 100%
+    );
+
+  pointer-events: none;
+}
+
+
+.om-event-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.55s ease;
+}
+
+
+.om-event-card:hover .om-event-image img {
+  transform: scale(1.07);
+}
+
+
+/* =========================================================
+   EVENT NUMBER
+========================================================= */
+
+.om-event-number {
+  position: absolute;
+
+  top: 15px;
+  left: 15px;
+
+  z-index: 3;
+
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+
+  color: #367b3a;
+
+  border-radius: 14px;
+
+  font-size: 12px;
+  font-weight: 900;
+
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.13);
+}
+
+
+/* =========================================================
+   CATEGORY
+========================================================= */
+
+.om-event-category {
+  position: absolute;
+
+  left: 15px;
+  bottom: 15px;
+
+  z-index: 3;
+
+  padding: 8px 14px;
+
+  background: #277ABF;
+
+  color: #ffffff;
+
+  border-radius: 50px;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 0.4px;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.om-event-content {
+  position: relative;
+
+  padding: 23px 25px 25px;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.om-event-icon {
+  position: absolute;
+
+  top: -48px;
+  right: 24px;
+
+  z-index: 5;
+
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2e7337,
+      #56a04a
+    );
+
+  color: #ffffff;
+
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+
+  font-size: 20px;
+
+  box-shadow:
+    0 8px 20px rgba(38, 93, 41, 0.2);
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.om-event-card:hover .om-event-icon {
+  background: #277ABF;
+
+  transform: rotate(8deg);
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.om-event-content h3 {
+  min-height: 58px;
+
+  margin: 0 60px 10px 0;
+
+  color: #173f2b;
+
+  font-size: 21px;
+  line-height: 1.35;
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.om-event-content > p {
+  margin: 0 0 20px;
+
+  color: #69736b;
+
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   CARD BOTTOM
+========================================================= */
+
+.om-event-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 17px;
+
+  border-top: 1px solid #e6ece3;
+}
+
+
+.om-event-link {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 9px;
+
+  color: #35783b;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  transition: color 0.3s ease;
+}
+
+
+.om-event-link i {
+  color: #277ABF;
+
+  transition: transform 0.3s ease;
+}
+
+
+.om-event-link:hover {
+  color: #277ABF;
+}
+
+
+.om-event-link:hover i {
+  transform: translateX(5px);
+}
+
+
+/* LEAF */
+
+.om-event-leaf {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #edf6e9;
+
+  color: #28AECE;
+
+  border-radius: 50%;
+
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   BOTTOM CTA
+========================================================= */
+
+.om-events-cta {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-top: 50px;
+
+  padding: 30px 34px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      120deg,
+      #173f2b 0%,
+      #2d7039 60%,
+      #28AECE 100%
+    );
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 15px 40px rgba(32, 82, 39, 0.18);
+}
+
+
+.om-events-cta::before {
+  content: "";
+
+  position: absolute;
+
+  width: 190px;
+  height: 190px;
+
+  right: 120px;
+  top: -120px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  border-radius: 50%;
+}
+
+
+.om-events-cta-left {
+  position: relative;
+  z-index: 2;
+}
+
+
+.om-events-cta-small {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #f5ad4b;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 1.6px;
+}
+
+
+.om-events-cta h3 {
+  margin: 0 0 5px;
+
+  color: #ffffff;
+
+  font-size: 23px;
+  font-weight: 800;
+}
+
+
+.om-events-cta p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   CTA BUTTON
+========================================================= */
+
+.om-events-cta-btn {
+  position: relative;
+  z-index: 2;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  flex-shrink: 0;
+
+  padding: 15px 23px;
+
+  background: #277ABF;
+
+  color: #ffffff;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.om-events-cta-btn:hover {
+  background: #ffffff;
+
+  color: #173f2b;
+
+  transform: translateY(-2px);
+}
+
+
+.om-events-cta-btn i {
+  transition: transform 0.3s ease;
+}
+
+
+.om-events-cta-btn:hover i {
+  transform: translateX(4px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+  .om-events-section {
+    padding: 70px 0;
+  }
+
+
+  .om-events-heading {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+
+  .om-events-heading-left,
+  .om-events-heading-right {
+    width: 100%;
+  }
+
+
+  .om-events-heading h2 {
+    font-size: 37px;
+  }
+
+
+  .om-events-heading-right p {
+    max-width: 700px;
+  }
+
+
+  .om-events-cta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+  .om-events-section {
+    padding: 55px 0;
+  }
+
+
+  .om-events-heading {
+    margin-bottom: 32px;
+  }
+
+
+  .om-events-heading h2 {
+    font-size: 30px;
+  }
+
+
+  .om-events-heading-right p {
+    font-size: 13px;
+  }
+
+
+  .om-event-image {
+    height: 245px;
+  }
+
+
+  .om-event-content h3 {
+    min-height: auto;
+
+    margin-right: 55px;
+
+    font-size: 20px;
+  }
+
+
+  .om-events-cta {
+    padding: 25px 21px;
+  }
+
+
+  .om-events-cta h3 {
+    font-size: 19px;
+  }
+
+
+  .om-events-cta-btn {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .om-events-heading h2 {
+    font-size: 27px;
+  }
+
+
+  .om-event-image {
+    height: 220px;
+  }
+
+
+  .om-event-content {
+    padding: 22px 19px;
+  }
+
+
+  .om-event-content h3 {
+    font-size: 19px;
+  }
+
+}

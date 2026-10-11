@@ -1,0 +1,1011 @@
+/* ==========================================================
+   OM AGRO TOURISM - ACTIVITIES
+========================================================== */
+
+.om-activities-section {
+  position: relative;
+  overflow: hidden;
+
+  /* padding: 90px 0; */
+
+  background: #f6f9f2;
+}
+
+
+/* ==========================================================
+   HEADING
+========================================================== */
+
+.om-activities-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 50px;
+
+  margin-bottom: 45px;
+}
+
+
+.om-activities-heading-left {
+  width: 55%;
+}
+
+
+.om-activities-heading-right {
+  width: 45%;
+}
+
+
+.om-activities-small-title {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 9px;
+
+  color: #ed9127;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+.om-activities-small-title::before {
+  content: "";
+
+  width: 30px;
+  height: 2px;
+
+  background: #ed9127;
+}
+
+
+.om-activities-heading h2 {
+  margin: 0;
+
+  color: #173d28;
+
+  font-size: 46px;
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+
+.om-activities-heading h2 span {
+  color: #4b9141;
+}
+
+
+.om-activities-heading-right p {
+  margin: 0;
+
+  padding-left: 22px;
+
+  color: #687269;
+
+  border-left: 3px solid #ed9127;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* ==========================================================
+   ACTIVITY CARD
+========================================================== */
+
+.om-activity-card {
+  position: relative;
+
+  height: 100%;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #e3eadf;
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 30px rgba(37, 75, 33, 0.07);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+
+.om-activity-card:hover {
+  transform: translateY(-9px);
+
+  border-color: rgba(73, 145, 63, 0.35);
+
+  box-shadow:
+    0 20px 45px rgba(37, 75, 33, 0.14);
+}
+
+
+/* ==========================================================
+   CARD IMAGE
+========================================================== */
+
+.om-activity-card-image {
+  position: relative;
+
+  height: 220px;
+
+  overflow: hidden;
+}
+
+
+.om-activity-card-image::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(18, 56, 32, 0.02) 30%,
+      rgba(18, 56, 32, 0.45) 100%
+    );
+
+  pointer-events: none;
+}
+
+
+.om-activity-card-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.6s ease;
+}
+
+
+.om-activity-card:hover .om-activity-card-image img {
+  transform: scale(1.08);
+}
+
+
+/* ==========================================================
+   NUMBER
+========================================================== */
+
+.om-activity-number {
+  position: absolute;
+
+  top: 15px;
+  left: 15px;
+
+  z-index: 3;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+
+  color: #347438;
+
+  border-radius: 50%;
+
+  font-size: 11px;
+  font-weight: 900;
+
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ==========================================================
+   IMAGE TAG
+========================================================== */
+
+.om-activity-tag {
+  position: absolute;
+
+  left: 15px;
+  bottom: 15px;
+
+  z-index: 3;
+
+  padding: 7px 12px;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  color: #347438;
+
+  border-radius: 50px;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* ==========================================================
+   FLOATING ICON
+========================================================== */
+
+.om-activity-icon {
+  position: absolute;
+
+  top: 192px;
+  right: 20px;
+
+  z-index: 5;
+
+  width: 57px;
+  height: 57px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #387d3c,
+      #59a44a
+    );
+
+  color: #ffffff;
+
+  border: 5px solid #ffffff;
+  border-radius: 16px;
+
+  font-size: 19px;
+
+  box-shadow:
+    0 8px 20px rgba(43, 101, 47, 0.2);
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.om-activity-card:hover .om-activity-icon {
+  background: #ed9127;
+
+  transform: rotate(-6deg);
+}
+
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+.om-activity-card-content {
+  padding: 30px 21px 21px;
+}
+
+
+.om-activity-card-content h3 {
+  margin: 0 0 10px;
+
+  padding-right: 25px;
+
+  color: #173d28;
+
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 800;
+}
+
+
+.om-activity-card-content > p {
+  margin: 0 0 20px;
+
+  color: #69746b;
+
+  font-size: 12.5px;
+  line-height: 1.75;
+}
+
+
+/* ==========================================================
+   CARD FOOTER
+========================================================== */
+
+.om-activity-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 15px;
+
+  border-top: 1px solid #e8eee5;
+}
+
+
+.om-activity-card-footer > span {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 6px;
+
+  color: #537858;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+
+.om-activity-card-footer > span i {
+  color: #4e9a43;
+}
+
+
+/* ROUND ARROW */
+
+.om-activity-card-footer > a {
+  width: 35px;
+  height: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #edf5e9;
+
+  color: #347438;
+
+  border-radius: 50%;
+
+  text-decoration: none;
+
+  font-size: 10px;
+
+  transition: all 0.3s ease;
+}
+
+
+.om-activity-card-footer > a:hover {
+  background: #ed9127;
+
+  color: #ffffff;
+
+  transform: translateX(3px);
+}
+
+
+/* ==========================================================
+   CTA
+========================================================== */
+
+.om-activities-cta {
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-top: 50px;
+
+  padding: 27px 30px;
+
+  background:
+    linear-gradient(
+      120deg,
+      #173e29 0%,
+      #2d7038 55%,
+      #4c9543 100%
+    );
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 15px 40px rgba(31, 78, 37, 0.18);
+}
+
+
+.om-activities-cta::after {
+  content: "";
+
+  position: absolute;
+
+  right: -70px;
+  top: -100px;
+
+  width: 230px;
+  height: 230px;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  border-radius: 50%;
+}
+
+
+/* LEFT CTA */
+
+.om-activities-cta-left {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+}
+
+
+.om-activities-cta-icon {
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  color: #f5aa48;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 17px;
+
+  font-size: 22px;
+}
+
+
+.om-activities-cta-left span {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #f5aa48;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 1.6px;
+}
+
+
+.om-activities-cta-left h3 {
+  margin: 0 0 4px;
+
+  color: #ffffff;
+
+  font-size: 21px;
+  font-weight: 800;
+}
+
+
+.om-activities-cta-left p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.68);
+
+  font-size: 12px;
+}
+
+
+/* CTA BUTTON */
+
+.om-activities-cta-button {
+  position: relative;
+  z-index: 2;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  flex-shrink: 0;
+
+  padding: 14px 22px;
+
+  background: #ed9127;
+
+  color: #ffffff;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  transition: all 0.3s ease;
+}
+
+
+.om-activities-cta-button:hover {
+  background: #ffffff;
+
+  color: #173d28;
+
+  transform: translateY(-2px);
+}
+
+
+.om-activities-cta-button i {
+  transition: transform 0.3s ease;
+}
+
+
+.om-activities-cta-button:hover i {
+  transform: translateX(4px);
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 991px) {
+
+  .om-activities-section {
+    padding: 70px 0;
+  }
+
+
+  .om-activities-heading {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+
+  .om-activities-heading-left,
+  .om-activities-heading-right {
+    width: 100%;
+  }
+
+
+  .om-activities-heading h2 {
+    font-size: 37px;
+  }
+
+
+  .om-activities-heading-right p {
+    max-width: 700px;
+  }
+
+
+  .om-activities-cta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 767px) {
+
+  .om-activities-section {
+    padding: 55px 0;
+  }
+
+
+  .om-activities-heading {
+    margin-bottom: 32px;
+  }
+
+
+  .om-activities-heading h2 {
+    font-size: 30px;
+  }
+
+
+  .om-activities-heading-right p {
+    font-size: 13px;
+  }
+
+
+  .om-activity-card-image {
+    height: 240px;
+  }
+
+
+  .om-activity-icon {
+    top: 212px;
+  }
+
+
+  .om-activities-cta {
+    padding: 23px 20px;
+  }
+
+
+  .om-activities-cta-left {
+    align-items: flex-start;
+  }
+
+
+  .om-activities-cta-left h3 {
+    font-size: 18px;
+  }
+
+
+  .om-activities-cta-button {
+    width: 100%;
+  }
+
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 480px) {
+
+  .om-activities-heading h2 {
+    font-size: 27px;
+  }
+
+
+  .om-activity-card-image {
+    height: 220px;
+  }
+
+
+  .om-activity-icon {
+    top: 192px;
+  }
+
+
+  .om-activities-cta-left {
+    flex-direction: column;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================
+   OM AGRO TOURISM - ACTIVITIES
+   SKY BLUE / AQUA COLOR OVERRIDE
+   MOST BLUE + VERY LESS GREEN
+========================================================== */
+
+
+/* ================= MAIN BACKGROUND ================= */
+
+.om-activities-section {
+  background:
+    radial-gradient(
+      circle at 5% 8%,
+      rgba(56, 189, 217, 0.14),
+      transparent 26%
+    ),
+    radial-gradient(
+      circle at 95% 92%,
+      rgba(7, 143, 183, 0.09),
+      transparent 28%
+    ),
+    linear-gradient(
+      180deg,
+      #f5fcfe 0%,
+      #edf9fc 100%
+    ) !important;
+}
+
+
+/* ================= SMALL TITLE ================= */
+
+.om-activities-small-title {
+  color: #078db5 !important;
+}
+
+.om-activities-small-title::before {
+  background: #38bdd9 !important;
+}
+
+
+/* ================= MAIN HEADING ================= */
+
+.om-activities-heading h2 {
+  color: #075f7d !important;
+}
+
+.om-activities-heading h2 span {
+  color: #078fb7 !important;
+}
+
+
+/* ================= HEADING DESCRIPTION ================= */
+
+.om-activities-heading-right p {
+  color: #617b84 !important;
+
+  border-left-color: #38bdd9 !important;
+}
+
+
+/* ==========================================================
+   ACTIVITY CARDS
+========================================================== */
+
+.om-activity-card {
+  background: #ffffff !important;
+
+  border-color: #d6edf3 !important;
+
+  box-shadow:
+    0 10px 30px rgba(7, 95, 125, 0.07) !important;
+}
+
+
+.om-activity-card:hover {
+  border-color: rgba(7, 143, 183, 0.32) !important;
+
+  box-shadow:
+    0 20px 45px rgba(7, 95, 125, 0.14) !important;
+}
+
+
+/* ================= IMAGE OVERLAY ================= */
+
+.om-activity-card-image::after {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(7, 95, 125, 0.01) 30%,
+      rgba(5, 85, 112, 0.38) 100%
+    ) !important;
+}
+
+
+/* ================= NUMBER ================= */
+
+.om-activity-number {
+  background: rgba(255, 255, 255, 0.96) !important;
+
+  color: #078db5 !important;
+
+  box-shadow:
+    0 5px 18px rgba(7, 95, 125, 0.15) !important;
+}
+
+
+/* ================= IMAGE TAG ================= */
+
+.om-activity-tag {
+  background: rgba(255, 255, 255, 0.95) !important;
+
+  color: #078db5 !important;
+
+  box-shadow:
+    0 5px 15px rgba(7, 95, 125, 0.10) !important;
+}
+
+
+/* ==========================================================
+   FLOATING ICON
+========================================================== */
+
+.om-activity-icon {
+  background:
+    linear-gradient(
+      135deg,
+      #078db5 0%,
+      #38bdd9 100%
+    ) !important;
+
+  color: #ffffff !important;
+
+  border-color: #ffffff !important;
+
+  box-shadow:
+    0 8px 20px rgba(7, 143, 183, 0.23) !important;
+}
+
+
+/* Hover - small green brand accent */
+
+.om-activity-card:hover .om-activity-icon {
+  background:
+    linear-gradient(
+      135deg,
+      #438640,
+      #59a44b
+    ) !important;
+
+  color: #ffffff !important;
+}
+
+
+/* ==========================================================
+   CARD CONTENT
+========================================================== */
+
+.om-activity-card-content h3 {
+  color: #075f7d !important;
+}
+
+
+.om-activity-card-content > p {
+  color: #687e85 !important;
+}
+
+
+/* ================= CARD FOOTER ================= */
+
+.om-activity-card-footer {
+  border-top-color: #dceff3 !important;
+}
+
+
+.om-activity-card-footer > span {
+  color: #54747d !important;
+}
+
+
+/* Small nature accent */
+
+.om-activity-card-footer > span i {
+  color: #438640 !important;
+}
+
+
+/* ================= ROUND ARROW ================= */
+
+.om-activity-card-footer > a {
+  background: #e7f7fa !important;
+
+  color: #078db5 !important;
+}
+
+
+.om-activity-card-footer > a:hover {
+  background: #078db5 !important;
+
+  color: #ffffff !important;
+
+  box-shadow:
+    0 7px 18px rgba(7, 143, 183, 0.20) !important;
+}
+
+
+/* ==========================================================
+   BOTTOM CTA
+========================================================== */
+
+.om-activities-cta {
+  background:
+    linear-gradient(
+      120deg,
+      #075f7d 0%,
+      #078db5 55%,
+      #38bdd9 100%
+    ) !important;
+
+  box-shadow:
+    0 15px 40px rgba(7, 95, 125, 0.20) !important;
+}
+
+
+/* CTA Decorative Circle */
+
+.om-activities-cta::after {
+  background: rgba(255, 255, 255, 0.07) !important;
+}
+
+
+/* ================= CTA ICON ================= */
+
+.om-activities-cta-icon {
+  background: rgba(255, 255, 255, 0.14) !important;
+
+  color: #ffffff !important;
+
+  border-color: rgba(255, 255, 255, 0.20) !important;
+}
+
+
+/* ================= CTA SMALL LABEL ================= */
+
+.om-activities-cta-left span {
+  color: #bceef6 !important;
+}
+
+
+/* ================= CTA TITLE ================= */
+
+.om-activities-cta-left h3 {
+  color: #ffffff !important;
+}
+
+
+/* ================= CTA DESCRIPTION ================= */
+
+.om-activities-cta-left p {
+  color: rgba(255, 255, 255, 0.78) !important;
+}
+
+
+/* ================= CTA BUTTON ================= */
+
+.om-activities-cta-button {
+  background: #ffffff !important;
+
+  color: #075f7d !important;
+
+  box-shadow:
+    0 8px 22px rgba(0, 0, 0, 0.10) !important;
+}
+
+
+.om-activities-cta-button:hover {
+  background: #438640 !important;
+
+  color: #ffffff !important;
+
+  box-shadow:
+    0 10px 25px rgba(67, 134, 64, 0.23) !important;
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 767px) {
+
+  .om-activities-section {
+    background:
+      linear-gradient(
+        180deg,
+        #f5fcfe 0%,
+        #edf9fc 100%
+      ) !important;
+  }
+
+  .om-activity-icon {
+    background:
+      linear-gradient(
+        135deg,
+        #078db5,
+        #38bdd9
+      ) !important;
+
+    border-color: #ffffff !important;
+  }
+
+  .om-activities-cta {
+    background:
+      linear-gradient(
+        145deg,
+        #075f7d 0%,
+        #078db5 65%,
+        #38bdd9 100%
+      ) !important;
+  }
+}

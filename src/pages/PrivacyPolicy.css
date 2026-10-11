@@ -1,0 +1,1041 @@
+/* ==========================================================
+   OM AGRO TOURISM - PRIVACY POLICY
+   Green Hero + Sky Blue + Aqua + Light Green + Orange
+========================================================== */
+
+
+/* ==========================================================
+   PRIVACY POLICY HERO / BANNER
+========================================================== */
+
+.om-policy-banner {
+  position: relative;
+  padding: 100px 0 85px;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 15% 15%,
+      rgba(255, 255, 255, 0.10),
+      transparent 24%
+    ),
+    radial-gradient(
+      circle at 85% 30%,
+      rgba(85, 205, 220, 0.15),
+      transparent 25%
+    ),
+    linear-gradient(
+      120deg,
+      #123f2b 0%,
+      #1d6841 48%,
+      #41934f 100%
+    );
+}
+
+
+/* Large decorative water circle */
+
+.om-policy-banner::after {
+  content: "";
+
+  position: absolute;
+  right: -90px;
+  bottom: -165px;
+
+  width: 350px;
+  height: 350px;
+
+  border: 55px solid rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+
+/* Small aqua decorative bubble */
+
+.om-policy-banner::before {
+  content: "";
+
+  position: absolute;
+  left: 7%;
+  bottom: 18%;
+
+  width: 85px;
+  height: 85px;
+
+  border: 17px solid rgba(95, 213, 229, 0.10);
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+
+.om-policy-banner-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 760px;
+  margin: auto;
+
+  text-align: center;
+}
+
+
+.om-policy-banner-content > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 14px;
+  padding: 7px 15px;
+
+  color: #ffffff;
+
+  background: rgba(82, 197, 218, 0.18);
+
+  border: 1px solid rgba(144, 230, 241, 0.22);
+  border-radius: 50px;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+
+  backdrop-filter: blur(5px);
+}
+
+
+.om-policy-banner-content h1 {
+  margin: 0 0 14px;
+
+  color: #ffffff;
+
+  font-size: 50px;
+  line-height: 1.15;
+  font-weight: 800;
+
+  text-shadow:
+    0 5px 18px rgba(4, 43, 28, 0.18);
+}
+
+
+.om-policy-banner-content p {
+  max-width: 620px;
+  margin: auto;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* ==========================================================
+   POLICY SECTION
+========================================================== */
+
+.om-policy-section {
+  position: relative;
+
+  padding: 80px 0;
+
+  background:
+    radial-gradient(
+      circle at 0% 25%,
+      rgba(49, 180, 213, 0.09),
+      transparent 22%
+    ),
+    radial-gradient(
+      circle at 100% 85%,
+      rgba(76, 147, 67, 0.07),
+      transparent 24%
+    ),
+    linear-gradient(
+      180deg,
+      #f4fcfe 0%,
+      #ffffff 48%,
+      #f6fbf5 100%
+    );
+}
+
+
+.om-policy-layout {
+  display: grid;
+
+  grid-template-columns: 310px minmax(0, 1fr);
+
+  gap: 35px;
+
+  align-items: start;
+}
+
+
+/* ==========================================================
+   SIDEBAR
+========================================================== */
+
+.om-policy-sidebar {
+  position: sticky;
+  top: 110px;
+}
+
+
+.om-policy-sidebar-box {
+  position: relative;
+
+  padding: 30px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      145deg,
+      #087fa8 0%,
+      #10a8c9 55%,
+      #43c4dd 100%
+    );
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 22px;
+
+  box-shadow:
+    0 15px 40px rgba(7, 126, 161, 0.16);
+}
+
+
+.om-policy-sidebar-box::after {
+  content: "";
+
+  position: absolute;
+  right: -45px;
+  bottom: -55px;
+
+  width: 140px;
+  height: 140px;
+
+  border: 25px solid rgba(255, 255, 255, 0.07);
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+
+.om-policy-sidebar-icon {
+  position: relative;
+  z-index: 2;
+
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 24px;
+
+  background: #ffffff;
+
+  color: #1988aa;
+
+  border-radius: 17px;
+
+  font-size: 22px;
+
+  box-shadow:
+    0 8px 20px rgba(0, 86, 112, 0.14);
+}
+
+
+.om-policy-sidebar-box > span {
+  position: relative;
+  z-index: 2;
+
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #e1faff;
+
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 1.7px;
+}
+
+
+.om-policy-sidebar-box h3 {
+  position: relative;
+  z-index: 2;
+
+  margin: 0 0 13px;
+
+  color: #ffffff;
+
+  font-size: 22px;
+  line-height: 1.35;
+  font-weight: 800;
+}
+
+
+.om-policy-sidebar-box p {
+  position: relative;
+  z-index: 2;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+
+/* ==========================================================
+   SIDEBAR CONTACT
+========================================================== */
+
+.om-policy-contact-box {
+  position: relative;
+
+  margin-top: 18px;
+  padding: 25px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f5fbf7
+    );
+
+  border: 1px solid #dbece0;
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 30px rgba(25, 103, 65, 0.07);
+}
+
+
+.om-policy-contact-box::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 25px;
+
+  width: 58px;
+  height: 4px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #277ABF,
+      #ffc05a
+    );
+
+  border-radius: 0 0 10px 10px;
+}
+
+
+.om-policy-contact-box > span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #e78c20;
+
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+
+.om-policy-contact-box h4 {
+  margin: 0 0 17px;
+
+  color: #175c3a;
+
+  font-size: 20px;
+  font-weight: 800;
+}
+
+
+.om-policy-contact-box a {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 9px;
+
+  margin-bottom: 12px;
+
+  color: #62746b;
+
+  text-decoration: none;
+
+  font-size: 11px;
+  line-height: 1.5;
+
+  word-break: break-word;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.om-policy-contact-box a:last-child {
+  margin-bottom: 0;
+}
+
+
+.om-policy-contact-box a i {
+  width: 25px;
+  height: 25px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 25px;
+
+  margin-top: -3px;
+
+  color: #078db6;
+
+  background: #e2f7fc;
+
+  border-radius: 7px;
+
+  font-size: 10px;
+}
+
+
+.om-policy-contact-box a:hover {
+  color: #078db6;
+
+  transform: translateX(3px);
+}
+
+
+/* ==========================================================
+   MAIN CONTENT AREA
+========================================================== */
+
+.om-policy-content {
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #dcecef;
+  border-radius: 24px;
+
+  box-shadow:
+    0 15px 45px rgba(20, 107, 128, 0.08);
+}
+
+
+/* Aqua + green + orange top accent */
+
+.om-policy-content::before {
+  content: "";
+
+  display: block;
+
+  width: 100%;
+  height: 5px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #139fc3 0%,
+      #5bd1e4 45%,
+      #28AECE 75%,
+      #277ABF 100%
+    );
+}
+
+
+/* ==========================================================
+   POLICY BLOCK
+========================================================== */
+
+.om-policy-block {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: 55px minmax(0, 1fr);
+
+  gap: 20px;
+
+  padding: 32px 35px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e4eff0;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.om-policy-block:hover {
+  background:
+    linear-gradient(
+      90deg,
+      #ffffff 0%,
+      #f5fcfe 100%
+    );
+}
+
+
+.om-policy-last {
+  border-bottom: 0;
+}
+
+
+/* ==========================================================
+   NUMBER
+========================================================== */
+
+.om-policy-number {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #e3f8fc,
+      #d7f2f8
+    );
+
+  color: #0788ae;
+
+  border: 1px solid #c8eaf2;
+  border-radius: 14px;
+
+  font-size: 11px;
+  font-weight: 900;
+
+  box-shadow:
+    0 5px 13px rgba(9, 143, 180, 0.08);
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.om-policy-block:hover .om-policy-number {
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #078bb4,
+      #36bddb
+    );
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 18px rgba(8, 137, 176, 0.18);
+}
+
+
+/* Green number variation */
+
+.om-policy-block:nth-child(3n + 2) .om-policy-number {
+  color: #347c3b;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eef8eb,
+      #e1f2dc
+    );
+
+  border-color: #d3e9cd;
+}
+
+
+.om-policy-block:nth-child(3n + 2):hover .om-policy-number {
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2e7d45,
+      #55a653
+    );
+}
+
+
+/* Orange number variation */
+
+.om-policy-block:nth-child(3n) .om-policy-number {
+  color: #d7801c;
+
+  background: #fff4e1;
+
+  border-color: #f5dfba;
+}
+
+
+.om-policy-block:nth-child(3n):hover .om-policy-number {
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #e58b20,
+      #f4a933
+    );
+}
+
+
+/* ==========================================================
+   HEADINGS
+========================================================== */
+
+.om-policy-block h2 {
+  margin: 0 0 12px;
+
+  color: #075f7d;
+
+  font-size: 21px;
+  line-height: 1.4;
+  font-weight: 800;
+}
+
+
+.om-policy-block h2::after {
+  content: "";
+
+  display: block;
+
+  width: 38px;
+  height: 3px;
+
+  margin-top: 8px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #12a6ca,
+      #6ed5e7
+    );
+
+  border-radius: 20px;
+
+  transition: width 0.3s ease;
+}
+
+
+.om-policy-block:hover h2::after {
+  width: 65px;
+}
+
+
+/* Green accent on selected sections */
+
+.om-policy-block:nth-child(3n + 2) h2 {
+  color: #1d6841;
+}
+
+
+.om-policy-block:nth-child(3n + 2) h2::after {
+  background:
+    linear-gradient(
+      90deg,
+      #3f8d47,
+      #83bb6c
+    );
+}
+
+
+/* Orange accent */
+
+.om-policy-block:nth-child(3n) h2::after {
+  background:
+    linear-gradient(
+      90deg,
+      #277ABF,
+      #ffc15a
+    );
+}
+
+
+/* ==========================================================
+   TEXT
+========================================================== */
+
+.om-policy-block p {
+  margin: 0 0 11px;
+
+  color: #66777a;
+
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+
+.om-policy-block p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ==========================================================
+   LIST
+========================================================== */
+
+.om-policy-block ul {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 10px 15px;
+
+  margin: 18px 0 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+
+.om-policy-block li {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 11px 12px;
+
+  background:
+    linear-gradient(
+      110deg,
+      #f3fbfd,
+      #eef9fb
+    );
+
+  color: #587278;
+
+  border: 1px solid #e0f0f3;
+  border-radius: 10px;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+
+.om-policy-block li:hover {
+  transform: translateY(-2px);
+
+  background: #ffffff;
+
+  border-color: #b9e2ec;
+}
+
+
+.om-policy-block li i {
+  width: 22px;
+  height: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #078bb2;
+
+  background: #dcf5fa;
+
+  border-radius: 50%;
+
+  font-size: 8px;
+}
+
+
+/* Small green variation */
+
+.om-policy-block li:nth-child(3n + 2) i {
+  color: #398342;
+
+  background: #e6f4e2;
+}
+
+
+/* Small orange variation */
+
+.om-policy-block li:nth-child(3n) i {
+  color: #df861c;
+
+  background: #fff0d8;
+}
+
+
+/* ==========================================================
+   CONTACT DETAILS
+========================================================== */
+
+.om-policy-contact-details {
+  position: relative;
+
+  margin-top: 18px;
+  padding: 20px;
+
+  background:
+    linear-gradient(
+      110deg,
+      #edfafd 0%,
+      #f7fcfa 100%
+    );
+
+  border: 1px solid #d8edef;
+  border-left: 4px solid #159fc2;
+
+  border-radius: 0 13px 13px 0;
+}
+
+
+.om-policy-contact-details::after {
+  content: "";
+
+  position: absolute;
+
+  right: 16px;
+  top: 16px;
+
+  width: 8px;
+  height: 8px;
+
+  background: #28AECE;
+
+  border-radius: 50%;
+
+  box-shadow:
+    14px 0 0 #277ABF;
+}
+
+
+.om-policy-contact-details p {
+  margin-bottom: 7px;
+}
+
+
+.om-policy-contact-details strong {
+  color: #1d6841;
+}
+
+
+.om-policy-contact-details a {
+  color: #078bb2;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  transition: color 0.3s ease;
+}
+
+
+.om-policy-contact-details a:hover {
+  color: #277ABF;
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 991px) {
+
+  .om-policy-banner {
+    padding: 80px 0 70px;
+  }
+
+  .om-policy-banner-content h1 {
+    font-size: 42px;
+  }
+
+  .om-policy-section {
+    padding: 65px 0;
+  }
+
+  .om-policy-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .om-policy-sidebar {
+    position: static;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+  }
+
+  .om-policy-contact-box {
+    margin-top: 0;
+  }
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 767px) {
+
+  .om-policy-banner {
+    padding: 65px 15px 55px;
+  }
+
+  .om-policy-banner-content h1 {
+    font-size: 34px;
+  }
+
+  .om-policy-banner-content p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .om-policy-section {
+    padding: 50px 0;
+  }
+
+  .om-policy-layout {
+    gap: 20px;
+  }
+
+  .om-policy-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .om-policy-sidebar-box,
+  .om-policy-contact-box {
+    border-radius: 17px;
+  }
+
+  .om-policy-content {
+    border-radius: 18px;
+  }
+
+  .om-policy-block {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+
+    padding: 25px 22px;
+  }
+
+  .om-policy-number {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 12px;
+  }
+
+  .om-policy-block h2 {
+    font-size: 19px;
+  }
+
+  .om-policy-block ul {
+    grid-template-columns: 1fr;
+
+    gap: 8px;
+  }
+
+  .om-policy-contact-details {
+    padding: 17px;
+  }
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 480px) {
+
+  .om-policy-banner {
+    padding: 55px 13px 48px;
+  }
+
+  .om-policy-banner-content > span {
+    padding: 6px 11px;
+
+    font-size: 8px;
+    letter-spacing: 1.5px;
+  }
+
+  .om-policy-banner-content h1 {
+    font-size: 29px;
+  }
+
+  .om-policy-banner-content p {
+    font-size: 12px;
+  }
+
+  .om-policy-section {
+    padding: 40px 0;
+  }
+
+  .om-policy-sidebar-box,
+  .om-policy-contact-box {
+    padding: 22px;
+  }
+
+  .om-policy-sidebar-icon {
+    width: 50px;
+    height: 50px;
+
+    margin-bottom: 18px;
+
+    border-radius: 14px;
+
+    font-size: 18px;
+  }
+
+  .om-policy-sidebar-box h3 {
+    font-size: 19px;
+  }
+
+  .om-policy-contact-box h4 {
+    font-size: 18px;
+  }
+
+  .om-policy-block {
+    padding: 22px 18px;
+  }
+
+  .om-policy-block h2 {
+    font-size: 18px;
+  }
+
+  .om-policy-block p {
+    font-size: 12px;
+    line-height: 1.75;
+  }
+
+  .om-policy-block li {
+    padding: 9px 10px;
+
+    font-size: 10.5px;
+  }
+}

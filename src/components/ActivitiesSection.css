@@ -1,0 +1,582 @@
+/* =========================================================
+   OM AGRO TOURISM
+   ACTIVITIES SECTION
+========================================================= */
+
+.omActivities {
+    width: 100%;
+
+    padding: 15px 0;
+
+    background:
+        radial-gradient(
+            circle at 8% 10%,
+            rgba(78, 147, 67, 0.10),
+            transparent 20%
+        ),
+        radial-gradient(
+            circle at 95% 85%,
+            rgba(245, 166, 35, 0.10),
+            transparent 22%
+        ),
+        #ffffff;
+}
+
+
+.omActivitiesContainer {
+    width: 92%;
+    max-width: 1450px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.omActivitiesHead {
+    position: relative;
+
+    max-width: 780px;
+
+    margin-bottom: 42px;
+}
+
+
+/* LABEL */
+
+.omActivitiesTag {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 13px;
+
+    color: #2f7b45;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+
+.omActivitiesTagIcon {
+    width: 32px;
+    height: 32px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+
+    background: linear-gradient(
+        135deg,
+        #175c3a,
+        #28AECE
+    );
+
+    border-radius: 50%;
+
+    font-size: 11px;
+}
+
+
+/* TITLE */
+
+.omActivitiesTitle {
+    margin: 0 0 13px;
+
+    color: #173f2b;
+
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.2;
+
+    letter-spacing: -0.5px;
+}
+
+
+.omActivitiesTitle span {
+    color: #277ABF;
+}
+
+
+/* DESCRIPTION */
+
+.omActivitiesIntro {
+    max-width: 700px;
+
+    margin: 0;
+
+    color: #6b796e;
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   GRID
+   4 CARDS DESKTOP
+========================================================= */
+
+.omActivitiesGrid {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   ACTIVITY CARD
+========================================================= */
+
+.omActivityCard {
+    position: relative;
+
+    height: 330px;
+
+    overflow: hidden;
+
+    background: #173f2b;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 10px 28px rgba(23, 63, 43, 0.13);
+
+    isolation: isolate;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+/* different shape for some cards */
+
+.omActivityCard:nth-child(4n + 2),
+.omActivityCard:nth-child(4n + 3) {
+    border-radius: 22px 22px 60px 22px;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.omActivityImage {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+.omActivityImage img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+
+/* =========================================================
+   IMAGE OVERLAY
+========================================================= */
+
+.omActivityCard::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    z-index: 1;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(10, 44, 27, 0.02) 20%,
+            rgba(10, 44, 27, 0.15) 48%,
+            rgba(9, 48, 28, 0.92) 100%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   ORANGE DECORATION
+========================================================= */
+
+.omActivityCard::after {
+    content: "";
+
+    position: absolute;
+
+    z-index: 2;
+
+    right: -30px;
+    bottom: -30px;
+
+    width: 100px;
+    height: 100px;
+
+    border: 18px solid rgba(245, 166, 35, 0.75);
+
+    border-radius: 50%;
+
+    transition: all 0.4s ease;
+
+    pointer-events: none;
+}
+
+
+/* alternate green decoration */
+
+.omActivityCard:nth-child(even)::after {
+    border-color: rgba(117, 184, 78, 0.80);
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.omActivityNumber {
+    position: absolute;
+
+    z-index: 4;
+
+    top: 16px;
+    right: 16px;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #173f2b;
+
+    background: rgba(255, 255, 255, 0.93);
+
+    border: 1px solid rgba(255, 255, 255, 0.65);
+
+    border-radius: 50%;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.12);
+
+    backdrop-filter: blur(7px);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.omActivityContent {
+    position: absolute;
+
+    z-index: 4;
+
+    left: 22px;
+    right: 22px;
+    bottom: 22px;
+}
+
+
+.omActivitySmall {
+    margin-bottom: 6px;
+
+    color: #f5b33d;
+
+    font-size: 9px;
+    font-weight: 750;
+
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+
+.omActivityContent h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 1.25;
+
+    text-shadow:
+        0 2px 7px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================================
+   COLORED LINE
+========================================================= */
+
+.omActivityLine {
+    display: block;
+
+    width: 38px;
+    height: 4px;
+
+    margin-top: 11px;
+
+    background: #f5a623;
+
+    border-radius: 20px;
+
+    transition: width 0.4s ease;
+}
+
+
+.omActivityCard:nth-child(even) .omActivityLine {
+    background: #79b957;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.omActivityCard:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 18px 35px rgba(23, 63, 43, 0.20);
+}
+
+
+.omActivityCard:hover .omActivityImage img {
+    transform: scale(1.09);
+}
+
+
+.omActivityCard:hover .omActivityLine {
+    width: 75px;
+}
+
+
+.omActivityCard:hover::after {
+    width: 115px;
+    height: 115px;
+
+    right: -35px;
+    bottom: -35px;
+}
+
+
+/* =========================================================
+   COLOR VARIATION
+========================================================= */
+
+.omActivityCard:nth-child(4n + 1)
+.omActivityNumber {
+    color: #ffffff;
+    background: #247344;
+}
+
+
+.omActivityCard:nth-child(4n + 2)
+.omActivityNumber {
+    color: #ffffff;
+    background: #277ABF;
+}
+
+
+.omActivityCard:nth-child(4n + 3)
+.omActivityNumber {
+    color: #ffffff;
+    background: #28AECE;
+}
+
+
+.omActivityCard:nth-child(4n + 4)
+.omActivityNumber {
+    color: #ffffff;
+    background: #277ABF;
+}
+
+
+/* =========================================================
+   LARGE TABLET
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .omActivitiesGrid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+
+    .omActivityCard {
+        height: 310px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .omActivities {
+        padding: 60px 0;
+    }
+
+
+    .omActivitiesTitle {
+        font-size: 34px;
+    }
+
+
+    .omActivitiesGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 16px;
+    }
+
+
+    .omActivityCard {
+        height: 300px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .omActivities {
+        padding: 45px 0;
+    }
+
+
+    .omActivitiesContainer {
+        width: calc(100% - 28px);
+    }
+
+
+    .omActivitiesHead {
+        margin-bottom: 28px;
+    }
+
+
+    .omActivitiesTag {
+        margin-bottom: 10px;
+
+        font-size: 10px;
+    }
+
+
+    .omActivitiesTagIcon {
+        width: 29px;
+        height: 29px;
+    }
+
+
+    .omActivitiesTitle {
+        margin-bottom: 10px;
+
+        font-size: 27px;
+    }
+
+
+    .omActivitiesIntro {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+
+    .omActivitiesGrid {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+    }
+
+
+    .omActivityCard,
+    .omActivityCard:nth-child(4n + 2),
+    .omActivityCard:nth-child(4n + 3) {
+        height: 260px;
+
+        border-radius: 18px;
+    }
+
+
+    .omActivityContent {
+        left: 18px;
+        right: 18px;
+        bottom: 18px;
+    }
+
+
+    .omActivityContent h3 {
+        font-size: 19px;
+    }
+
+
+    .omActivityNumber {
+        top: 13px;
+        right: 13px;
+
+        width: 38px;
+        height: 38px;
+
+        font-size: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .omActivities {
+        padding: 38px 0;
+    }
+
+
+    .omActivitiesTitle {
+        font-size: 24px;
+    }
+
+
+    .omActivityCard {
+        height: 235px;
+    }
+
+
+    .omActivityContent h3 {
+        font-size: 17px;
+    }
+
+}

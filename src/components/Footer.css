@@ -1,0 +1,465 @@
+/* ==========================================================
+   OM AGRO TOURISM - SIMPLE PROFESSIONAL FOOTER
+========================================================== */
+
+.omSimpleFooter {
+  position: relative;
+  width: 100%;
+  font-family: inherit;
+}
+
+
+/* ==========================================================
+   MAIN FOOTER
+========================================================== */
+
+.omSimpleFooterMain {
+  padding: 58px 0 45px;
+
+  background:
+    radial-gradient(
+      circle at 90% 10%,
+      rgba(76, 200, 223, 0.12),
+      transparent 28%
+    ),
+    linear-gradient(
+      135deg,
+      #075f7d 0%,
+      #076e91 55%,
+      #087d9e 100%
+    );
+}
+
+
+/* ==========================================================
+   LOGO / ABOUT
+========================================================== */
+
+.omFooterLogo {
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+.omFooterLogo img {
+  width: 185px;
+  max-width: 100%;
+  height: auto;
+
+  object-fit: contain;
+
+  background: #ffffff;
+
+  padding: 8px 12px;
+
+  border-radius: 8px;
+}
+
+
+.omFooterAbout p {
+  max-width: 370px;
+
+  margin: 0 0 20px;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+
+/* ==========================================================
+   SOCIAL MEDIA
+========================================================== */
+
+.omFooterSocial {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+
+.omFooterSocial a {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+
+  color: #ffffff !important;
+
+  font-size: 14px;
+
+  text-decoration: none !important;
+
+  transition: all 0.25s ease;
+}
+
+
+.omFooterSocial a:hover {
+  background: #ffffff;
+
+  color: #078db5 !important;
+
+  transform: translateY(-3px);
+}
+
+
+/* ==========================================================
+   COLUMN TITLE
+========================================================== */
+
+.omFooterColumn h3 {
+  position: relative;
+
+  margin: 5px 0 22px;
+  padding-bottom: 12px;
+
+  color: #ffffff;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+
+.omFooterColumn h3::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 38px;
+  height: 3px;
+
+  background: #62d4e6;
+
+  border-radius: 10px;
+}
+
+
+/* ==========================================================
+   FOOTER LINKS
+========================================================== */
+
+.omFooterColumn ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+
+.omFooterColumn ul li {
+  margin-bottom: 11px;
+}
+
+
+.omFooterColumn ul li:last-child {
+  margin-bottom: 0;
+}
+
+
+.omFooterColumn ul li a {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: rgba(255, 255, 255, 0.76) !important;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  text-decoration: none !important;
+
+  transition: all 0.2s ease;
+}
+
+
+.omFooterColumn ul li a i {
+  color: #63d3e5;
+
+  font-size: 9px;
+
+  transition: transform 0.2s ease;
+}
+
+
+.omFooterColumn ul li a:hover {
+  color: #ffffff !important;
+
+  transform: translateX(3px);
+}
+
+
+.omFooterColumn ul li a:hover i {
+  transform: translateX(2px);
+}
+
+
+/* ==========================================================
+   CONTACT INFORMATION
+========================================================== */
+
+.omFooterContactItem {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 12px;
+
+  margin-bottom: 17px;
+}
+
+
+.omFooterContactItem:last-child {
+  margin-bottom: 0;
+}
+
+
+.omFooterContactIcon {
+  width: 36px;
+  height: 36px;
+
+  flex: 0 0 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+
+  color: #74d9e8;
+
+  font-size: 12px;
+}
+
+
+.omFooterContactItem span {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #8ce1ed;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.7px;
+}
+
+
+.omFooterContactItem p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+
+.omFooterContactItem a {
+  color: rgba(255, 255, 255, 0.82) !important;
+
+  text-decoration: none !important;
+
+  transition: color 0.2s ease;
+}
+
+
+.omFooterContactItem a:hover {
+  color: #ffffff !important;
+}
+
+
+/* ==========================================================
+   BOTTOM FOOTER
+========================================================== */
+.darkcolorrr{
+    color: white ;
+}
+.omFooterBottom {
+  padding: 16px 0;
+
+  background: #054d66;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+
+.omFooterBottomInner {
+  /* display: flex; */
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+
+.omFooterBottom p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.68);
+
+  font-size: 15px;
+}
+
+
+.omFooterBottom p strong {
+  color: #ffffff;
+
+  font-weight: 700;
+}
+
+
+/* Bottom Links */
+
+.omFooterBottomLinks {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+.omFooterBottomLinks a {
+  color: rgba(255, 255, 255, 0.68) !important;
+
+  font-size: 10px;
+
+  text-decoration: none !important;
+
+  transition: color 0.2s ease;
+}
+
+
+.omFooterBottomLinks a:hover {
+  color: #ffffff !important;
+}
+
+
+.omFooterBottomLinks span {
+  color: rgba(255, 255, 255, 0.25);
+
+  font-size: 9px;
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 991px) {
+
+  .omSimpleFooterMain {
+    padding: 48px 0 38px;
+  }
+
+  .omFooterColumn h3 {
+    margin-top: 0;
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 767px) {
+
+  .omSimpleFooterMain {
+    padding: 40px 0 32px;
+  }
+
+
+  .omFooterLogo img {
+    width: 165px;
+  }
+
+
+  .omFooterAbout p {
+    max-width: 100%;
+
+    font-size: 12px;
+  }
+
+
+  .omFooterColumn h3 {
+    margin-bottom: 17px;
+
+    font-size: 16px;
+  }
+
+
+  .omFooterBottomInner {
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    text-align: center;
+  }
+
+
+  .omFooterBottomLinks {
+    justify-content: center;
+  }
+
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 480px) {
+
+  .omSimpleFooterMain {
+    padding: 35px 0 28px;
+  }
+
+
+  .omFooterSocial a {
+    width: 35px;
+    height: 35px;
+
+    font-size: 13px;
+  }
+
+
+  .omFooterContactItem p {
+    font-size: 10.5px;
+  }
+
+
+  .omFooterColumn ul li a {
+    font-size: 11px;
+  }
+
+
+  .omFooterBottom {
+    padding: 14px 0;
+  }
+
+
+  .omFooterBottomLinks {
+    flex-wrap: wrap;
+  }
+
+}

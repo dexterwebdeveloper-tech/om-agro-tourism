@@ -1,0 +1,720 @@
+/* =========================================================
+   OM AGRO TOURISM - BLOG SECTION
+========================================================= */
+
+.om-blog-section {
+  position: relative;
+  overflow: hidden;
+
+  padding: 15px 0;
+
+  background:
+    radial-gradient(
+      circle at 5% 10%,
+      rgba(67, 143, 72, 0.08),
+      transparent 24%
+    ),
+    radial-gradient(
+      circle at 95% 90%,
+      rgba(7, 143, 183, 0.10),
+      transparent 25%
+    ),
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f2fbfd 100%
+    );
+}
+
+
+/* =========================================================
+   BACKGROUND DECORATION
+========================================================= */
+
+.om-blog-shape {
+  position: absolute;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.om-blog-shape-left {
+  width: 260px;
+  height: 260px;
+
+  top: -150px;
+  left: -120px;
+
+  border: 42px solid rgba(67, 143, 72, 0.05);
+}
+
+.om-blog-shape-right {
+  width: 300px;
+  height: 300px;
+
+  right: -160px;
+  bottom: -170px;
+
+  border: 48px solid rgba(7, 143, 183, 0.05);
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.om-blog-heading {
+  position: relative;
+  z-index: 2;
+
+  max-width: 790px;
+
+  margin: 0 auto 48px;
+
+  text-align: center;
+}
+
+.om-blog-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  margin-bottom: 13px;
+
+  color: #078fb7;
+
+  font-size: 11px;
+  line-height: 1.3;
+  font-weight: 900;
+
+  letter-spacing: 2px;
+}
+
+.om-blog-label span {
+  width: 30px;
+  height: 2px;
+
+  background: #438f48;
+
+  border-radius: 20px;
+}
+
+.om-blog-heading h2 {
+  margin: 0 0 17px;
+
+  color: #173f2b;
+
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.om-blog-heading h2 span {
+  color: #078fb7;
+}
+
+.om-blog-heading > p {
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  color: #65777c;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   BLOG CARD
+========================================================= */
+
+.om-blog-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #dceff3;
+  border-radius: 22px;
+
+  box-shadow:
+    0 12px 40px rgba(7, 95, 125, 0.08);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.om-blog-card:hover {
+  transform: translateY(-9px);
+
+  border-color: #b9e2eb;
+
+  box-shadow:
+    0 22px 50px rgba(7, 95, 125, 0.15);
+}
+
+
+/* =========================================================
+   BLOG IMAGE
+========================================================= */
+
+.om-blog-image {
+  position: relative;
+
+  display: block;
+
+  height: 245px;
+
+  overflow: hidden;
+
+  background: #dceff3;
+
+  text-decoration: none;
+}
+
+.om-blog-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.6s ease;
+}
+
+.om-blog-card:hover .om-blog-image img {
+  transform: scale(1.07);
+}
+
+.om-blog-image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(7, 70, 80, 0.02) 30%,
+      rgba(8, 66, 54, 0.38) 100%
+    );
+
+  transition: background 0.3s ease;
+}
+
+.om-blog-card:hover .om-blog-image-overlay {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(7, 70, 80, 0.05) 20%,
+      rgba(8, 66, 54, 0.5) 100%
+    );
+}
+
+
+/* =========================================================
+   CATEGORY BADGE
+========================================================= */
+
+.om-blog-category {
+  position: absolute;
+
+  top: 18px;
+  left: 18px;
+
+  z-index: 3;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 8px 12px;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  border-radius: 50px;
+
+  color: #173f2b;
+
+  font-size: 9px;
+  line-height: 1;
+  font-weight: 800;
+
+  letter-spacing: 0.4px;
+
+  box-shadow:
+    0 7px 20px rgba(0, 0, 0, 0.1);
+}
+
+.om-blog-category i {
+  color: #438f48;
+
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   IMAGE ARROW
+========================================================= */
+
+.om-blog-image-arrow {
+  position: absolute;
+
+  z-index: 3;
+
+  right: 18px;
+  bottom: 18px;
+
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+
+  border-radius: 50%;
+
+  color: #078fb7;
+
+  font-size: 12px;
+
+  box-shadow:
+    0 7px 20px rgba(0, 0, 0, 0.13);
+
+  transform: translateY(8px);
+
+  opacity: 0;
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.om-blog-card:hover .om-blog-image-arrow {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+.om-blog-image-arrow:hover {
+  background: #078fb7;
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   BLOG CONTENT
+========================================================= */
+
+.om-blog-content {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  padding: 25px 25px 22px;
+}
+
+
+/* Brand */
+
+.om-blog-brand {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  margin-bottom: 11px;
+
+  color: #438f48;
+
+  font-size: 9px;
+  font-weight: 900;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+}
+
+.om-blog-brand-icon {
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eaf6e9;
+
+  border-radius: 50%;
+
+  color: #438f48;
+
+  font-size: 9px;
+}
+
+
+/* Title */
+
+.om-blog-content h3 {
+  margin: 0 0 12px;
+
+  font-size: 21px;
+  line-height: 1.35;
+  font-weight: 800;
+}
+
+.om-blog-content h3 a {
+  color: #173f2b;
+
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+.om-blog-content h3 a:hover {
+  color: #078fb7;
+}
+
+
+/* Description */
+
+.om-blog-description {
+  margin: 0 0 21px;
+
+  color: #718186;
+
+  font-size: 12px;
+  line-height: 1.75;
+
+  flex-grow: 1;
+}
+
+
+/* =========================================================
+   CARD FOOTER
+========================================================= */
+
+.om-blog-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding-top: 17px;
+
+  border-top: 1px solid #e8f0f1;
+}
+
+.om-blog-readmore {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 9px;
+
+  color: #078fb7;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  text-decoration: none !important;
+}
+
+.om-blog-readmore span {
+  width: 27px;
+  height: 27px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #e8f8fc;
+
+  border-radius: 50%;
+
+  font-size: 9px;
+
+  transition: all 0.3s ease;
+}
+
+.om-blog-readmore:hover {
+  color: #438f48;
+}
+
+.om-blog-readmore:hover span {
+  background: #438f48;
+
+  color: #ffffff;
+
+  transform: translateX(3px);
+}
+
+.om-blog-leaf {
+  color: #b8d8bb;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   BOTTOM CTA
+========================================================= */
+
+.om-blog-bottom {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  max-width: 850px;
+
+  margin: 42px auto 0;
+  padding: 16px 18px;
+
+  background: #ffffff;
+
+  border: 1px solid #dceff3;
+  border-radius: 18px;
+
+  box-shadow:
+    0 10px 35px rgba(7, 95, 125, 0.07);
+}
+
+.om-blog-bottom-icon {
+  width: 48px;
+  height: 48px;
+
+  flex: 0 0 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #e7f8fc,
+      #e9f6e8
+    );
+
+  border-radius: 13px;
+
+  color: #438f48;
+
+  font-size: 18px;
+}
+
+.om-blog-bottom > div:nth-child(2) {
+  flex: 1;
+}
+
+.om-blog-bottom span {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #173f2b;
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.om-blog-bottom p {
+  margin: 0;
+
+  color: #77878b;
+
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   ENQUIRY BUTTON
+========================================================= */
+
+.om-blog-enquiry-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  min-height: 43px;
+
+  padding: 10px 17px;
+
+  background: #078fb7;
+
+  border-radius: 10px;
+
+  color: #ffffff !important;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  white-space: nowrap;
+
+  text-decoration: none !important;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.om-blog-enquiry-btn:hover {
+  background: #438f48;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+  .om-blog-section {
+    padding: 75px 0;
+  }
+
+  .om-blog-heading h2 {
+    font-size: 37px;
+  }
+
+  .om-blog-image {
+    height: 235px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+  .om-blog-section {
+    padding: 60px 0;
+  }
+
+  .om-blog-heading {
+    margin-bottom: 35px;
+  }
+
+  .om-blog-heading h2 {
+    font-size: 31px;
+  }
+
+  .om-blog-heading > p {
+    font-size: 13px;
+  }
+
+  .om-blog-image {
+    height: 250px;
+  }
+
+  .om-blog-content {
+    padding: 22px;
+  }
+
+  .om-blog-bottom {
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+
+    padding: 16px;
+  }
+
+  .om-blog-enquiry-btn {
+    width: 100%;
+
+    margin-top: 3px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 575px) {
+
+  .om-blog-section {
+    padding: 50px 0;
+  }
+
+  .om-blog-label {
+    gap: 8px;
+
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+
+  .om-blog-label span {
+    width: 22px;
+  }
+
+  .om-blog-heading h2 {
+    font-size: 27px;
+  }
+
+  .om-blog-image {
+    height: 220px;
+  }
+
+  .om-blog-content h3 {
+    font-size: 19px;
+  }
+
+  .om-blog-description {
+    font-size: 11px;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .om-blog-image {
+    height: 195px;
+  }
+
+  .om-blog-content {
+    padding: 19px 17px;
+  }
+
+  .om-blog-heading h2 {
+    font-size: 25px;
+  }
+
+}
